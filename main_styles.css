@@ -1,0 +1,298 @@
+/* CSS Reset & Normalize */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+  margin: 0; /* Takes away any default margin set by the user agent and resets/overrides it to 0. */
+  padding: 0; /* Takes away any default padding set by the user agent and resets/overrides it to 0. */
+  border: 0; /* Takes away any default border set by the user agent and resets/overrides it to 0. */
+  outline: 0; /* Takes away any default outline set by the user agent and resets/overrides it to 0. */
+  vertical-align: baseline; /* Makes sure the vertical-align is set to the default value of baseline. */
+  background: transparent; /* Makes sure the background is set to the default value of transparent. */
+  font-size: 100%; /* Makes sure the font-size is set to the default value of 100% (100% = 1em = 1rem = 16px = 12pt). */
+  font: inherit; /* Makes sure the font is inherited by the child elements. */
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+ display: block; /* Makes sure the display property of these new HTML5 elements have a value of block so they can behave as intended on some older browsers. */
+}
+
+ol, ul {
+ list-style: none; /* This shorthand makes sure the list-style-type, list-style-position and list-style-image properties are set to none. */
+}
+
+blockquote, q {
+ quotes: none; /* Specifies that the "open-quote" and "close-quote" values of the "content" property will not produce any quotation marks. */
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+ content: "";
+ content: none;
+}
+
+textarea {
+ overflow: auto;
+}
+
+b, strong {
+ font-weight: bolder;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+/* CSS Variables */
+:root {
+  --main-theme-color: #333;
+  /* --main-theme-font-family */
+}
+
+html {
+ box-sizing: border-box;
+ -webkit-text-size-adjust: 100%;
+ -ms-text-size-adjust: 100%;
+}
+
+body {
+ background-color: white;
+ font-size: 14px;
+ font-family: Arial, sans-serif;
+ color: #333;
+ line-height: 1.15;
+ overflow-x: hidden;
+ overflow-y: scroll;
+ min-width: 320px; /* */
+}
+
+img {
+  max-width: 100%;
+  border-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: 'Trebuchet MS';
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+/* Main fixed header */
+.Mfh {
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ z-index: 104; /* */
+}
+
+/* Main fixed header - Primary header container */
+.Mfh_Phc {
+ height: 40px;
+ width: 100%;
+ background-color: var(--main-theme-color);
+}
+
+/* Main fixed header - Primary header */
+.Mfh_Ph {
+ position: relative;
+ height: 100%;
+ padding: 0 10px; /* Equal padding */
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+/* Main fixed header - Secondary header container */
+.Mfh_Shc {
+ height: 38px;
+ width: 100%;
+     box-shadow: 0 2px 3px -2px grey;
+ background-color: white; /* Giving it a value of inherit gives it a background color of transparent because its parent, the header tag, has a background color of transparent. So I have to explicitly define a background color of white */
+}
+
+/* Main fixed header - Secondary header */
+.Mfh_Sh {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center; /* To apply align-items, height should be applied to the container. */
+}
+
+.Mfh_Sh a {
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+  font-size: inherit;
+  line-height: 1;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  flex: 1 1 0; /* flex-basis: 100%; which one to use? */
+  border-bottom: 1px solid gray;
+  /* font-weight: bold; */
+}
+
+.Mfh_Sh a:hover {
+  border-bottom: 3px solid gray;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  color: gray;
+}
+
+#Mfh_Sh_nav_option1 {
+  border-bottom: 3px solid var(--main-theme-color);
+  padding-top: 10px;
+  padding-bottom: 9px;
+  color: var(--main-theme-color);
+}
+
+.Mfh_Sh_nav_option3 {
+  display: none;
+}
+
+/* Main fixed audio player */
+.Mfap {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 104; /* */
+  background-color: inherit;
+}
+
+/* Main fixed audio player - Base container */
+.Mfap_Bc {
+   height: 56px;
+   width: 100%;
+   background-color: white;
+   border-top: 4px solid var(--main-theme-color);
+}
+
+/* Main fixed audio player - Extended container */
+.Mfap_Ec {
+  height: 270px;
+  width: 100%;
+  background-color: inherit;
+  border-top: 2px solid var(--main-theme-color);
+  display: none;
+}
+
+
+/* Main fixed audio player - Base */
+.Mfap_B, .Mfap_E, .Mfap_T {
+ position: relative;
+ height: 100%;
+ padding: 0 10px;
+}
+
+/* Page content container */
+.Pcc {
+  height: 4000px; /* */
+  width: 100%;
+  background-color: inherit;
+}
+
+/* Page content */
+.Pc {
+  height: 100%;
+  padding: 100px 10px;
+  padding-right: 0;
+}
+
+/* Main fixed desktop menu */
+.Mfdm {
+  flex: 0 0 150px;
+  padding: 0 5px;
+  line-height: 1.75;
+}
+
+.Dlm {
+  display: none;
+  min-width: 150px;
+}
+
+.Flex-c2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.Mfmm {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.Mfmm_Tc {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.Mrct {
+
+}
+
+/* Beginning of Media Queries */
+
+/* On screens that are 480px or more */
+@media screen and (min-width: 495px) {
+
+  .Mfh_Sh_nav_option3 {
+    display: block;
+  }
+
+  .Fgi {
+    width: 33.33%;
+    height: 33.33%;
+  }
+
+}
+
+/* On screens that are 480px or more */
+@media screen and (min-width: 740px) {
+
+  .Dlm {
+    display: block;
+  }
+}
+
+/* On screens that are 480px or more */
+@media screen and (min-width: 1040px) {
+  .Cac {
+    width: 20%;
+    height: 20%;
+  }
+}
+c
