@@ -42,7 +42,24 @@
 /* Release information */
 .Ri {
   margin-top: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+}
+
+.Cc {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+
+}
+
+.Cc_bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: gray;
+  cursor: pointer;
+  margin: 0 7px;
 }
 
 @media screen and (min-width: 465px) {

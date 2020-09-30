@@ -131,7 +131,7 @@ h6 {
 .Mfh_Shc {
  height: 38px;
  width: 100%;
-     box-shadow: 0 2px 3px -2px grey;
+ box-shadow: 0 2px 3px -2px grey;
  background-color: white; /* Giving it a value of inherit gives it a background color of transparent because its parent, the header tag, has a background color of transparent. So I have to explicitly define a background color of white */
 }
 
