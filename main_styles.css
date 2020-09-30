@@ -112,7 +112,7 @@ h6 {
 
 /* Main fixed header - Primary header container */
 .Mfh_Phc {
- height: 40px;
+ height: 43px;
  width: 100%;
  background-color: var(--main-theme-color);
 }
