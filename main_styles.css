@@ -3,26 +3,26 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
 thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
 video {
-  margin: 0; /* Takes away any default margin set by the user agent and resets/overrides it to 0. */
-  padding: 0; /* Takes away any default padding set by the user agent and resets/overrides it to 0. */
-  border: 0; /* Takes away any default border set by the user agent and resets/overrides it to 0. */
-  outline: 0; /* Takes away any default outline set by the user agent and resets/overrides it to 0. */
-  vertical-align: baseline; /* Makes sure the vertical-align is set to the default value of baseline. */
-  background: transparent; /* Makes sure the background is set to the default value of transparent. */
-  font-size: 100%; /* Makes sure the font-size is set to the default value of 100% (100% = 1em = 1rem = 16px = 12pt). */
-  font: inherit; /* Makes sure the font is inherited by the child elements. */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+  font: inherit;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
- display: block; /* Makes sure the display property of these new HTML5 elements have a value of block so they can behave as intended on some older browsers. */
+ display: block;
 }
 
 ol, ul {
- list-style: none; /* This shorthand makes sure the list-style-type, list-style-position and list-style-image properties are set to none. */
+ list-style: none;
 }
 
 blockquote, q {
- quotes: none; /* Specifies that the "open-quote" and "close-quote" values of the "content" property will not produce any quotation marks. */
+ quotes: none;
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
@@ -45,7 +45,11 @@ b, strong {
 /* CSS Variables */
 :root {
   --main-theme-color: #333;
-  /* --main-theme-font-family */
+  /* --secondary-theme-color: ; */
+  /* --main-theme-font-family: ; */
+  /* --secondary-theme-font-family: ; */
+  /* --base-white-color: ; */
+  --main-equal-padding-container: 0 10px;
 }
 
 html {
@@ -62,7 +66,7 @@ body {
  line-height: 1.15;
  overflow-x: hidden;
  overflow-y: scroll;
- min-width: 320px; /* */
+ min-width: 320px;
 }
 
 img {
@@ -72,37 +76,43 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  font-family: 'Trebuchet MS';
+  font-family: 'Gill Sans Extrabold';
   line-height: 1;
   margin-bottom: 8px;
 }
 
+/* heading - type 1 */
 h1 {
   font-size: 24px;
 }
 
+/* heading - type 2 */
 h2 {
   font-size: 22px;
 }
 
+/* heading - type 3 */
 h3 {
   font-size: 18px;
 }
 
+/* heading - type 4 */
 h4 {
   font-size: 16px;
 }
 
+/* heading - type 5 */
 h5 {
   font-size: 12px;
 }
 
+/* heading - type 6 */
 h6 {
   font-size: 10px;
 }
 
-/* Main fixed header */
-.Mfh {
+/* main fixed header */
+.mfh {
  position: fixed;
  top: 0;
  right: 0;
@@ -110,72 +120,78 @@ h6 {
  z-index: 104; /* */
 }
 
-/* Main fixed header - Primary header container */
-.Mfh_Phc {
- height: 43px;
+/* main fixed header - primary header container */
+.mfh-phc {
+ height: 48px;
  width: 100%;
- background-color: var(--main-theme-color);
+ background-color: #393939;
 }
 
-/* Main fixed header - Primary header */
-.Mfh_Ph {
+/* main fixed header - primary header */
+.mfh-ph {
  position: relative;
  height: 100%;
- padding: 0 10px; /* Equal padding */
+ padding: var(--main-equal-padding-container);
  display: flex;
  align-items: center;
  justify-content: space-between;
 }
 
-/* Main fixed header - Secondary header container */
-.Mfh_Shc {
- height: 38px;
+/* main fixed header - secondary header container */
+.mfh-shc {
+ height: 37px;
  width: 100%;
- box-shadow: 0 2px 3px -2px grey;
+ box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.5);
  background-color: white; /* Giving it a value of inherit gives it a background color of transparent because its parent, the header tag, has a background color of transparent. So I have to explicitly define a background color of white */
 }
 
-/* Main fixed header - Secondary header */
-.Mfh_Sh {
+/* main fixed header - secondary header */
+.mfh-sh {
   position: relative;
   height: 100%;
-  display: flex;
-  align-items: center; /* To apply align-items, height should be applied to the container. */
 }
 
-.Mfh_Sh a {
+/* main fixed header - secondary header navigation */
+.mfh-sh-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* main fixed header - secondary header navigation link */
+.mfh-sh-nav-link {
   text-decoration: none;
   text-align: center;
-  color: gray;
+  color: darkgray;
   font-size: inherit;
   line-height: 1;
-  padding-top: 10px;
-  padding-bottom: 11px;
+  padding-top: 11px;
+  padding-bottom: 12px;
   flex: 1 1 0; /* flex-basis: 100%; which one to use? */
-  border-bottom: 1px solid gray;
-  /* font-weight: bold; */
+
 }
 
-.Mfh_Sh a:hover {
-  border-bottom: 3px solid gray;
-  padding-top: 10px;
-  padding-bottom: 9px;
+/* main fixed header - secondary header navigation link hover */
+.mfh-sh-nav-link:hover {
+  border-bottom: 2px solid gray;
+  padding-top: 11px;
+  padding-bottom: 10px;
   color: gray;
 }
 
-#Mfh_Sh_nav_option1 {
-  border-bottom: 3px solid var(--main-theme-color);
-  padding-top: 10px;
-  padding-bottom: 9px;
+#mfh-sh-nav-link-1 {
+  border-bottom: 2px solid var(--main-theme-color);
+  padding-top: 11px;
+  padding-bottom: 10px;
   color: var(--main-theme-color);
+  font-weight: bold;
 }
 
-.Mfh_Sh_nav_option3 {
+#mfh-sh-nav-link-3 {
   display: none;
 }
 
-/* Main fixed audio player */
-.Mfap {
+/* main fixed audio player */
+.mfap {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -184,16 +200,16 @@ h6 {
   background-color: inherit;
 }
 
-/* Main fixed audio player - Base container */
-.Mfap_Bc {
-   height: 56px;
+/* main fixed audio player - base container */
+.mfap-bc {
+   height: 70px;
    width: 100%;
    background-color: white;
    border-top: 4px solid var(--main-theme-color);
 }
 
-/* Main fixed audio player - Extended container */
-.Mfap_Ec {
+/* main fixed audio player - extended container */
+.mfap-ec {
   height: 270px;
   width: 100%;
   background-color: inherit;
@@ -202,35 +218,69 @@ h6 {
 }
 
 
-/* Main fixed audio player - Base */
-.Mfap_B, .Mfap_E, .Mfap_T {
+/* main fixed audio player - base */
+.mfap-b, .mfap-e, .mfap-t {
  position: relative;
  height: 100%;
- padding: 0 10px;
+ padding: var(--main-equal-padding-container);
 }
 
-/* Page content container */
-.Pcc {
+.mfap-b {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mfap-b-dpc {
+  width: 50px;
+  height: 50px;
+}
+
+/* main fixed release content */
+.mfrc {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 500;
+}
+
+/* main fixed release content - tab container */
+.mfrc-tc {
+
+}
+
+/* main fixed release content - tab */
+.mfrc-t {
+
+}
+
+/* page content container */
+.pcc {
   height: 4000px; /* */
   width: 100%;
   background-color: inherit;
 }
 
-/* Page content */
-.Pc {
+/* page content */
+.pc {
   height: 100%;
-  padding: 100px 10px;
-  padding-right: 0;
+  padding: 100px 0 10px 10px; /* top - right - bottom - left */
 }
 
-/* Main fixed desktop menu */
-.Mfdm {
+/* main fixed desktop menu */
+.mfdm {
   flex: 0 0 150px;
   padding: 0 5px;
   line-height: 1.75;
 }
 
-.Dlm {
+.dlm {
   display: none;
   min-width: 150px;
 }
@@ -240,7 +290,8 @@ h6 {
   flex-direction: row;
 }
 
-.Mfmm {
+/* main fixed mobile menu */
+.mfmm {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -253,46 +304,117 @@ h6 {
   display: none;
 }
 
-.Mfmm_Tc {
+/* main fixed mobile menu - tab container */
+.mfmm-tc {
   width: 300px;
   height: 100%;
   background-color: white;
+}
+
+/* main fixed mobile menu - tab */
+.mfmm-t {
   position: relative;
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.Mrct {
-
+/* main fixed mobile menu - main sections link */
+.mfmm-msl {
+  text-decoration: none;
+  color: var(--main-theme-color);
 }
 
-/* Beginning of Media Queries */
+.mfh-ph-dmn a {
+  text-decoration: none;
+  color: white;
+  padding-right: 15px;
+  display: none;
+}
 
-/* On screens that are 480px or more */
+.fg, .sg {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* grid - item */
+.gi {
+  width: calc(100% / 2); /* 50% */
+  padding-right: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.fg-icaf {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  background-color: lightgrey;
+}
+
+.fg-icai {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.fg-im {
+  overflow: hidden;
+}
+
+
+
+/* beginning of media queries */
+
+/* on screens that are 480px or more */
 @media screen and (min-width: 495px) {
 
-  .Mfh_Sh_nav_option3 {
+  #mfh-sh-nav-link-3 {
     display: block;
   }
 
-  .Fgi {
-    width: 33.33%;
-    height: 33.33%;
+  .gi {
+    width: 33.33% !important ;
+  }
+
+  .fg-icaf  {
+    padding-bottom: 100%;
   }
 
 }
 
-/* On screens that are 480px or more */
+/* on screens that are 480px or more */
 @media screen and (min-width: 740px) {
 
-  .Dlm {
+  .dlm {
     display: block;
+  }
+
+  .gi {
+    width: 25% !important ;
+  }
+
+  .fg-icaf  {
+    padding-bottom: 100%;
+  }
+
+  .mfh-ph-icon-1 {
+    display: none;
   }
 }
 
-/* On screens that are 480px or more */
+/* on screens that are 480px or more */
 @media screen and (min-width: 1040px) {
-  .Cac {
-    width: 20%;
-    height: 20%;
+
+  .fg-i {
+    width: 20% !important;
+  }
+
+  .fg-icaf {
+    padding-bottom: 100%;
   }
 }
-c

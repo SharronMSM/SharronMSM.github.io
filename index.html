@@ -15,44 +15,71 @@
   <script src="main_scripts.js"></script>
   <noscript>Your browser does not support JavaScript.</noscript>
 
-  <!-- OG graph tags??? -->
 </head>
 
 <body>
 
-  <!-- Main fixed header -->
-  <header class="Mfh">
-    <div class="Mfh_Phc"><!-- Main fixed header | Primary header container -->
-      <div class="Mfh_Ph"><!-- Main fixed header | Primary header -->
+  <!-- main fixed header -->
+  <header class="mfh">
+    <div class="mfh-phc">
+      <div class="mfh-ph">
+
 
         <!-- Hamburger menu icon -->
-        <svg width="50px" height="20px" viewbox="0 0 50 20" onclick="showMfmm()">
-          <path d="M 1 1 h 21.1 M 1 8.8 h 15.1 M 1 16.7 h 21.1" stroke="white" fill="white" stroke-width="2px" />
-          <!-- M means; Pick up the pen and move it to the exact coordinates x, y -->
-        </svg>
+        <div style="display: flex; align-items: center; height: 100%;">
+          <div class="mfh-ph-icon-1" onclick="showMfmm()">
+            <svg width="30px" height="20px" viewbox="0 0 35 20">
+              <path stroke-width="2px" d="M 1 1 h 21.1 M 1 8.8 h 15.1 M 1 16.7 h 21.1" stroke="white" fill="white" stroke-width="2px" />
+            </svg>
+          </div>
 
-        <!-- MajorScale Music logo -->
+          <!-- Website logo -->
+          <a href="#">
+            <img style="padding-left: -10px;" src="images/logo.png" alt="" width="160px" height="46px" />
+          </a>
 
-        <!-- Search icon -->
+          <!-- Search icon -->
+          <div>
 
-      </div><!-- Main fixed header | Primary header -->
-    </div><!-- Main fixed header | Primary header container -->
+          </div>
 
-    <div class="Mfh_Shc"><!-- Main fixed header | Secondary header container -->
-      <nav class="Mfh_Sh"><!-- Main fixed header | Secondary header -->
-        <a href="index.html" id="Mfh_Sh_nav_option1">Explore</a>
-        <a href="stream_charts.html" class="Mfh_Sh_nav_option2">Charts</a>
-        <a href="#" class="Mfh_Sh_nav_option3">Trending</a>
-      </nav><!-- Main fixed header | Secondary header -->
-    </div><!-- Main fixed header | Secondary header container -->
+          <!-- Account icon -->
+          <div>
+
+          </div>
+        </div>
+
+
+
+        <div class="mfh-ph-dmn">
+          <a href="#">Stream</a>
+          <a href="#">Broadcast</a>
+          <a href="#">Events</a>
+          <a href="#">News</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mfh-shc">
+      <div class="mfh-sh">
+
+        <nav class="mfh-sh-nav">
+          <a id="mfh-sh-nav-link-1" class="mfh-sh-nav-link" href="index.html">Explore</a>
+          <a class="mfh-sh-nav-link" href="charts.html">Charts</a>
+          <a id="mfh-sh-nav-link-3" class="mfh-sh-nav-link" href="#">Trending</a>
+          <a id="mfh-sh-nav-link-4" class="mfh-sh-nav-link" href="#">New</a>
+        </nav>
+
+      </div>
+    </div>
   </header>
-  <!-- Main fixed header -->
+  <!-- main fixed header -->
 
-
-  <!-- Main fixed audio player  -->
-  <div class="Mfap">
-    <div class="Mfap_Ec">
-      <div class="Mfap_E">
+  <!-- main fixed audio player  -->
+  <div class="mfap">
+    <div class="mfap-ec">
+      <div class="mfap-e">
 
         <div>
           <div>
@@ -69,309 +96,289 @@
       </div>
     </div>
 
-    <div class="Mfap_Bc" onclick="showExtendedMfap()">
-      <div class="Mfap_B  Fc-4">
+    <div class="mfap-bc" onclick="showExtendedMfap()">
+      <div class="mfap-b">
 
-          <div class="Mfap-base-rca">
-            <img src="images/CP3.jpg" alt="" />
+        <div style="display: flex;">
+          <div class="mfap-b-dpc">
+            <img src="images/CP1.jpg" alt="" width="100%" height="100%" />
           </div>
-          <p>Track Title</p>
-          <p></p>
-
-      </div>
-    </div>
-  </div>
-  <!-- Main fixed audio player  -->
-
-
-  <!-- Page content -->
-  <div class="Pcc">
-    <div class="Pc">
-
-      <div class="Flex-c2">
-
-        <div class="Dlm">
-          <nav>
-            <ul>
-              <li>Hip-Hop</li>
-              <li>Reggae</li>
-              <li>Rap</li>
-              <li>Placeholder genre</li>
-              <li>Hip-Hop</li>
-              <li>Reggae</li>
-              <li>Rap</li>
-              <li>Placeholder genre</li>
-              <li>Hip-Hop</li>
-              <li>Reggae</li>
-              <li>Rap</li>
-              <li>Placeholder genre</li>
-              <li>Hip-Hop</li>
-              <li>Reggae</li>
-              <li>Rap</li>
-              <li>Hip-Hop</li>
-              <li>Reggae</li>
-              <li>Rap</li>
-              <li>Hip-Hop</li>
-              <li>Reggae</li>
-              <li>Rap</li>
-              <li>Hip-Hop</li>
-              <li>Reggae</li>
-              <li>Rap</li>
-              <li>Hip-Hop</li>
-              <li>Reggae</li>
-              <li>Rap</li>
-            </ul>
-          </nav>
+          <div>
+            <p>Song title</p>
+            <p>Song artists</p>
+          </div>
+          <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
         </div>
 
-        <div class="Agc"><!-- All grids container -->
+      </div>
+    </div>
+  </div>
+  <!-- main fixed audio player  -->
 
-          <h3>Featured</h3>
 
-          <!-- Featured grid -->
-          <div class="Fg  Flex-c1">
+  <!-- page content -->
+  <div class="pcc">
+    <div class="pc">
 
-            <!-- Featured grid item 1 -->
-            <div class="Fgi  Fgi1  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP1.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Featured grid item 1 -->
+      <h3>Featured</h3>
+      <div class="fg">
 
-            <!-- Featured grid item 2 -->
-            <div class="Fgi  Fgi2  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP2.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Featured grid item 2 -->
-
-            <!-- Featured grid item 3 -->
-            <div class="Fgi  Fgi3  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP3.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Featured grid item 3 -->
-
-            <!-- Featured grid item 4 -->
-            <div class="Fgi  Fgi4  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP4.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Featured grid item 4 -->
+        <!-- 1 -->
+        <div class="gi  fg-i">
+          <div class="fg-icaf">
+            <img src="images/test2.jpg" class="fg-icai" />
           </div>
-          <!-- Featured grid -->
-
-          <!-- Caroussel container -->
-            <div class="Cc">
-              <span class="Cc_bullet"></span>
-              <span class="Cc_bullet"></span>
-              <span class="Cc_bullet"></span>
-              <span class="Cc_bullet" style="background-color: #333;"></span>
-              <span class="Cc_bullet"></span>
-            </div>
-            <!-- Caroussel container -->
-
-          <h3>Recommended</h3>
-
-          <!-- Secondary grid -->
-          <div class="Sg  Flex-c1">
-
-            <!-- Secondary grid item 1 -->
-            <div class="Sgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP5.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Secondary grid item 1 -->
-
-            <!-- Secondary grid item 2 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP6.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Secondary grid item 2 -->
-
-            <!-- Secondary grid item 3 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP7.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Secondary grid item 3 -->
-
-            <!-- Secondary grid item 4 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP8.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Secondary grid item 4 -->
-
-            <!-- Secondary grid item 5 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP9.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Secondary grid item 5 -->
-
-            <!-- Secondary grid item 6 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP10.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Secondary grid item 6 -->
-
-            <!-- Secondary grid item 7 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP2.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Secondary grid item 7 -->
-
-            <!-- Secondary grid item 8 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP2.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Secondary grid item 8 -->
-
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
           </div>
-          <!-- Secondary grid -->
+        </div>
 
-          <h3>Trending</h3>
-
-          <!-- Tertiary grid -->
-          <div class="Sg  Flex-c1">
-
-            <!-- Tertiary grid item 1 -->
-            <div class="Sgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP1.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Tertiary grid item 1 -->
-
-            <!-- Tertiary grid item 2 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP2.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Tertiary grid item 2 -->
-
-            <!-- Tertiary grid item 3 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP2.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Tertiary grid item 3 -->
-
-            <!-- Tertiary grid item 4 -->
-            <div class="Fgi  Gi">
-              <div class="Acac"><!-- Album cover art container -->
-                <img src="images/CP2.jpg" />
-              </div>
-              <div class="Ri">
-                <p class="Rt">Release Title</p>
-                <p>Track artist info</p>
-              </div>
-            </div>
-            <!-- Tertiary grid item 4 -->
-
+        <!-- 2 -->
+        <div class="gi  fg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
           </div>
-          <!-- Tertiary grid -->
+          <div class="fg-im">
+            <p>Track title</p>
+            <p>Track artists</p>
+          </div>
+        </div>
 
-        </div><!-- All grids container -->
+        <!-- 3 -->
+        <div class="gi  fg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <p>Track title</p>
+            <p>Track artists</p>
+          </div>
+        </div>
 
+        <!-- 4 -->
+        <div class="gi  fg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <p>Track title</p>
+            <p>Track artists</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gi  fg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <p>Track title</p>
+            <p>Track artists</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  fg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <p>Track title</p>
+            <p>Track artists</p>
+          </div>
+        </div>
+
+      </div>
+
+      <h3>Secondary grid</h3>
+      <div class="sg">
+
+        <!-- 1 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="gi  sg-i">
+          <div class="fg-icaf">
+            <img class="fg-icai" />
+          </div>
+          <div class="fg-im">
+            <h5>Track title</h5>
+            <h6>Track artists</h6>
+          </div>
+        </div>
 
       </div>
 
     </div>
   </div>
-  <!-- Page content -->
+  <!-- page content -->
 
-  <!-- Main fixed mobile menu -->
-  <div class="Mfmm" onclick="hideMfmm()">
-    <div class="Mfmm_Tc"></div>
+  <!-- main fixed mobile menu -->
+  <div class="mfmm" onclick="hideMfmm()">
+    <div class="mfmm-tc">
+      <div class="mfmm-t">
+        <a href="index.html" class="mfmm-msl"><h2>Stream</h2></a>
+        <a href="broadcast.html" class="mfmm-msl"><h2>Broadcast</h2></a>
+        <a href="#" class="mfmm-msl"><h2>Events</h2></a>
+        <a href="#" class="mfmm-msl"><h2>News</h2></a>
+        <a href="#" class="mfmm-msl"><h2>Broadcast</h2></a>
+        <a href="#" class="mfmm-msl"><h2>Events</h2></a>
+        <a href="#" class="mfmm-msl"><h2>News</h2></a>
+      </div>
+    </div>
+  </div>
+  <!-- main fixed mobile menu -->
+
+  <!-- main fixed release content -->
+  <div class="mfrct" onclick="hideMfrct()">
 
   </div>
-  <!-- Main fixed mobile menu -->
-
-  <!-- Music release content tab -->
-  <div class="Mrct" onclick="hideMrct()">
-
-  </div>
-  <!-- Music release content tab -->
+  <!-- main fixed release content -->
 
   <!-- Desktop footer -->
   <footer></footer>

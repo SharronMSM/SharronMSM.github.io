@@ -31,28 +31,28 @@
   display: none;
 }
 
-/* Grid item */
-.Gi {
+/* grid item */
+.gi {
   width: 50%;
   height: 50%;
   padding-right: 10px;
   cursor: pointer;
 }
 
-/* Release information */
-.Ri {
+/* release information */
+.ri {
   margin-top: 5px;
   margin-bottom: 25px;
 }
 
-.Cc {
+.cc {
   width: 100%;
   text-align: center;
   height: 40px;
 
 }
 
-.Cc_bullet {
+.cc-bullet {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -62,7 +62,7 @@
   margin: 0 7px;
 }
 
-.Cc_bullet:hover {
+.cc-bullet:hover {
   background-color: #a0a0a0;
 }
 
@@ -84,31 +84,31 @@
 
 
 
-@media screen and (min-width: 465px) {
+/* @media screen and (min-width: 465px) {
 
-  .Mfh_Sh_nav_option3 {
+  #mfh-sh-nav-link-3 {
     display: block;
   }
 
-  .Fgi, .Sgi, .Tgi {
+  .fgi, .sgi, .tgi {
     width: 33.33%;
     height: 33.33%;
   }
 
-  .Fgi3 {
+  .fgi3 {
     display: block;
   }
 }
 
 @media screen and (min-width: 605px) {
 
-  .Fgi4 {
+  .fgi4 {
     display: block;
   }
 
-  .Fgi, .Sgi, .Tgi {
+  .fgi, .sgi, .tgi {
     width: 25%;
     height: 25%;
   }
 
-}
+} */
