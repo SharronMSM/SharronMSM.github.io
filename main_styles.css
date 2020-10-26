@@ -61,7 +61,7 @@ html {
 body {
  background-color: white;
  font-size: 14px;
- font-family: Arial, sans-serif;
+ font-family: ;
  color: #333;
  line-height: 1.15;
  overflow-x: hidden;
@@ -75,8 +75,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  font-family: 'Gill Sans Extrabold';
+  font-family: ;
   line-height: 1;
 }
 
@@ -93,6 +92,7 @@ h2 {
 /* heading - type 3 */
 h3 {
   font-size: 18px;
+  padding-bottom: 10px;
 }
 
 /* heading - type 4 */
@@ -103,15 +103,17 @@ h4 {
 /* heading - type 5 - track title */
 h5 {
   font-size: 18px;
+  font-family: "Segoe UI";
   line-height: 1.15;
-  font-family: Arial;
+  padding-top: 5px;
 }
 
-/* heading - type 6 */
+/* heading - type 6 - track artist */
 h6 {
-  font-size: 16px;
+  font-size: 14px;
+  font-family: "Segoe UI";
   line-height: 1.15;
-  font-family: Arial;
+  padding-top: 2px;
 }
 
 /* main fixed header */
