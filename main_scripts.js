@@ -8,3 +8,11 @@ function showMfmm() {
 function hideMfmm() {
   document.getElementsByClassName('mfmm')[0].style.display = "none";
 }
+
+function showMfapExtension() {
+  document.getElementsByClassName('mfap-holder')[0].style.display = "block";
+}
+
+function hideMfapExtension() {
+  document.getElementsByClassName('mfap-holder')[0].style.display = "none";  
+}
