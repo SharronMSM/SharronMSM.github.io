@@ -159,6 +159,7 @@ h6 {
 
 /* main fixed header - secondary header container */
 .mfh-shc {
+  display: none;
  height: 37px;
  width: 100%;
  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.5);
@@ -317,7 +318,7 @@ h6 {
 /* page content */
 .pc {
   height: 100%;
-  padding: 106px 0 10px 10px; /* top - right - bottom - left */
+  padding: 85px 0 10px 10px; /* top - right - bottom - left */
 }
 
 /* main fixed desktop menu */
