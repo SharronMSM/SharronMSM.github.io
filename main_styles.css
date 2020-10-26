@@ -103,7 +103,7 @@ h4 {
 /* heading - type 5 - track title */
 h5 {
   font-size: 18px;
-  font-family: "Segoe UI";
+  font-family: "Trebuchet MS";
   line-height: 1.15;
   padding-top: 5px;
 }
@@ -111,7 +111,7 @@ h5 {
 /* heading - type 6 - track artist */
 h6 {
   font-size: 14px;
-  font-family: "Segoe UI";
+  font-family: "Trebuchet MS";
   line-height: 1.15;
   padding-top: 2px;
 }
