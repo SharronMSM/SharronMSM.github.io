@@ -101,9 +101,10 @@ h4 {
   font-size: 16px;
 }
 
-/* heading - type 5 */
+/* heading - type 5 - track title */
 h5 {
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 1.5
 }
 
 /* heading - type 6 */
@@ -311,7 +312,7 @@ h6 {
 /* page content */
 .pc {
   height: 100%;
-  padding: 100px 0 10px 10px; /* top - right - bottom - left */
+  padding: 106px 0 10px 10px; /* top - right - bottom - left */
 }
 
 /* main fixed desktop menu */
@@ -406,6 +407,7 @@ h6 {
 .fg-im {
   overflow: hidden;
 }
+
 
 
 /* beginning of media queries */
