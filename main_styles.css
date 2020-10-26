@@ -78,7 +78,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: 'Gill Sans Extrabold';
   line-height: 1;
-  margin-bottom: 8px;
 }
 
 /* heading - type 1 */
@@ -103,13 +102,16 @@ h4 {
 
 /* heading - type 5 - track title */
 h5 {
-  font-size: 16px;
-  line-height: 1.5
+  font-size: 18px;
+  line-height: 1.15;
+  font-family: Arial;
 }
 
 /* heading - type 6 */
 h6 {
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 1.15;
+  font-family: Arial;
 }
 
 /* main fixed header */
@@ -150,6 +152,7 @@ h6 {
   text-decoration: none;
   color: white;
   padding-left: 20px;
+  display: none;
 }
 
 /* main fixed header - secondary header container */
