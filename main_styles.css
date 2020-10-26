@@ -318,7 +318,7 @@ h6 {
 /* page content */
 .pc {
   height: 100%;
-  padding: 85px 0 10px 10px; /* top - right - bottom - left */
+  padding: 70px 0 10px 10px; /* top - right - bottom - left */
 }
 
 /* main fixed desktop menu */
