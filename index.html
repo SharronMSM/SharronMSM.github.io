@@ -24,31 +24,35 @@
     <div class="mfh-phc">
       <div class="mfh-ph">
 
-          <div style="display: flex;">
+          <!-- Left part -->
+          <div style="">
             <!-- Hamburger menu icon -->
-            <div class="mfh-ph-icon-1" onclick="showMfmm()">
+            <div class="mfh-ph-hmi" onclick="showMfmm()">
               <svg width="30px" height="20px" viewbox="0 0 35 20">
                 <path stroke-width="2px" d="M 1 1 h 21.1 M 1 8.8 h 15.1 M 1 16.7 h 21.1" stroke="white" fill="white" stroke-width="2px" />
               </svg>
             </div>
 
             <!-- Website logo -->
-            <a href="#">
+            <a href="index.html">
               <img src="images/logo.png" alt="" width="100px" height="24px" />
             </a>
           </div>
+          <!-- Left part -->
 
+          <!-- Right part -->
           <div style="display: flex; align-items: center;">
             <!-- Search icon -->
-
-            <img src="images/search.png" alt="" width="20px" height="20px" />
-
+            <div onclick="showSearchBar()">
+              <img src="images/search.png" alt="" width="20px" height="20px" />
+            </div>
 
             <!-- Account icon -->
-            <img src="images/account.png" alt="" width="40px" height="40px" style="position: relative; left: 10px;" />
-
+            <a href="login.html" alt="">
+              <img src="images/account.png" alt="" width="40px" height="40px" style="position: relative; left: 10px;" />
+            </a>
           </div>
-
+          <!-- Right part -->
 
           <div class="mfh-ph-dm">
             <a href="index.html" class="mfh-ph-dml  active">Explore</a>
@@ -57,6 +61,14 @@
             <a href="#" class="mfh-ph-dml">News</a>
           </div>
 
+
+      </div>
+    </div>
+
+    <!-- main fixed header - primary header - over layer - search box -->
+    <div class="mfh-ph-ol-sb">
+      <div>
+        <input class="mfh-ph-sb" type="search" placeholder="Search content on MajorScale Music" />
       </div>
     </div>
 
@@ -297,8 +309,17 @@
           </div>
         </div>
 
-
       </div>
+
+      <!-- featured grid caroussel -->
+      <div class="fgc">
+        <span class="fgc-cb" aria-label="Go to slide 1"></span>
+        <span class="fgc-cb" aria-label="Go to slide 2"></span>
+        <span class="fgc-cb" aria-label="Go to slide 3"></span>
+        <span class="fgc-cb" aria-label="Go to slide 4"></span>
+        <span class="fgc-cb" aria-label="Go to slide 5"></span>
+      </div>
+
 
       <h3>Secondary grid</h3>
       <div class="sg">

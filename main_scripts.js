@@ -14,5 +14,11 @@ function showMfapExtension() {
 }
 
 function hideMfapExtension() {
-  document.getElementsByClassName('mfap-holder')[0].style.display = "none";  
+  document.getElementsByClassName('mfap-holder')[0].style.display = "none";
+}
+
+function showSearchBar() {
+  document.getElementsByClassName('mfh-ph-ol-sb')[0].style.display = "block";  
+
+
 }
