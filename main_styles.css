@@ -44,12 +44,12 @@ b, strong {
 
 /* CSS Variables */
 :root {
-  --main-theme-color: #333;
+  --main-theme-color: #484140;
   /* --secondary-theme-color: ; */
   /* --main-theme-font-family: ; */
   /* --secondary-theme-font-family: ; */
   /* --base-white-color: ; */
-  --main-equal-padding-container: 0 15px;
+  --main-equal-padding-container: 0 13px;
 }
 
 html {
@@ -72,8 +72,10 @@ body {
 img {
   max-width: 100%;
   border-style: none;
+
 }
 
+/* h1 to h6 */
 h1, h2, h3, h4, h5, h6 {
   font-family: ;
   line-height: 1;
@@ -99,6 +101,9 @@ h3 {
 /* heading - type 4 */
 h4 {
   font-size: 16px;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  color: grey;
 }
 
 /* heading - type 5 - track title */
@@ -120,20 +125,17 @@ h6 {
   font-weight: bold;
 }
 
-/* main fixed header */
-.mfh {
- position: fixed;
- top: 0;
- right: 0;
- left: 0;
- z-index: 104; /* */
-}
-
 /* main fixed header - primary header container */
 .mfh-phc {
  height: 52px;
  width: 100%;
- background-color: black;
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ background-color: #272524;
+ box-shadow: 1px 5px 6px 0 rgba(32, 33, 36, 0.28);
+ z-index: 104;
 }
 
 /* main fixed header - primary header */
@@ -142,18 +144,85 @@ h6 {
  height: 100%;
  padding: var(--main-equal-padding-container);
  display: flex;
+ flex-direction: row;
  align-items: center;
  justify-content: space-between;
 }
 
-/* main fixed header - primary header - desktop menu */
-.mfh-ph-dm {
+/* main fixed header - primary header - left */
+/* main fixed header - primary header - right */
+.mfh-ph-left, .mfh-ph-right {
+  display: flex;
+  flex-direction: row;
+}
+
+/* menu button */
+.menu-button {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  padding: 0; /* takes away the default padding it has for some reason */
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: 1; /* do I need this? */
+}
+
+/* menu button top line */
+.menu-button::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+  pointer-events: none; /* do I need this? */
+}
+
+/* menu button middle line */
+.mbml {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+  pointer-events: none; /* do I need this? */
+}
+
+/* menu button bottom line */
+.menu-button::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+  pointer-events: none; /* do I need this? */
+}
+
+/* search icon SVG */
+.search-icon {
+  width: 25px; /* width of svg viewport that overrides the svg width attribute */
+  height: 25px; /* height of svg viewport that overrides the svg height attribute */
+  stroke: white;
+  stroke-width: 1px;
+  flex-shrink: 0;
+  fill: white;
+}
+
+/* main fixed header - desktop main sections navigation */
+.mfh-dmsn {
   display: flex;
   display: none;
 }
 
-/* main fixed header - primary header - desktop menu links */
-.mfh-ph-dml {
+/* main fixed header - desktop main sections navigation - link */
+.mfh-dmsn-link {
   text-decoration: none;
   color: #9b9b9b;
   padding-left: 30px;
@@ -162,34 +231,8 @@ h6 {
   font-weight: bold;
 }
 
-/* main fixed header - primary header - hamburger menu icon */
-.mfh-ph-hmi {
-  display: inline-block;
-}
-
-.mfh-ph-dml:hover {
+.mfh-dmsn-link:hover {
   color: white;
-}
-
-.active {
-  color: white;
-}
-
-/* main fixed header - primary header - over layer - search box */
-.mfh-ph-ol-sb {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
-/* main fixed header - primary header - search bar */
-.mfh-ph-sb {
-  width: 100%;
-  height: 35px;
-  border-radius: 1px;
 }
 
 /* main fixed header - secondary header container */
@@ -207,6 +250,58 @@ h6 {
   height: 100%;
 }
 
+/* main fixed mobile menu - opacity background */
+.mfmm-ob {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 1000;
+}
+
+/* main fixed mobile menu - side bar container */
+.mfmm-sbc {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+}
+
+/* main fixed mobile menu - side bar */
+.mfmm-sb {
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/* mobile main sections navigation */
+.mmsn {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 15px;
+  font-family: "Trebuchet MS";
+}
+
+/* mobile main sections navigation - link */
+.mmsn-link {
+  text-decoration: none;
+  color: var(--main-theme-color);
+}
+
+/* log in sign in - opacity background */
+.lisi-ob {
+
+}
+
 /* main fixed audio player */
 .mfap {
   position: fixed;
@@ -219,10 +314,21 @@ h6 {
 
 /* main fixed audio player - base container */
 .mfap-bc {
-   height: 65px;
-   width: 100%;
-   background-color: white;
-   border-top: 4px solid var(--main-theme-color);
+  height: 65px;
+  width: 100%;
+  background-color: white;
+  border-top: 4px solid var(--main-theme-color);
+  z-index: ;
+}
+
+/* main fixed audio player - base */
+.mfap-b {
+  position: relative;
+  height: 100%;
+  padding: var(--main-equal-padding-container);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 /* main fixed audio player - extended container */
@@ -230,78 +336,16 @@ h6 {
   height: 270px;
   width: 100%;
   background-color: inherit;
-  display: ;
+  display: none;
+  border-top: 1px solid black;
 }
 
-/* main fixed audio player - base */
-.mfap-b, .mfap-e, .mfap-t {
- position: relative;
- height: 100%;
- padding: var(--main-equal-padding-container);
-}
-
-/* main fixed audio player - base */
-.mfap-b {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.mfap-b-dpc {
-  width: 50px;
-  height: 50px;
-}
-
+/* main fixed audio player - extended */
 .mfap-e {
-  overflow-y: scroll;
-}
-
-.mfap-ei {
-  width: 100%;
-  height: 60px;
-  border-bottom: 1px solid grey;
-  overflow: hidden;
-  display: flex;
-}
-
-.mfap-ei-cai {
-  width: 45px;
-  height: 45px;
-}
-
-.mfap-htc {
-  width: 100%;
-  height: 15px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-
-.mfap-holder {
-  display: none;
-}
-
-/* main fixed release content */
-.mfrc {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
   height: 100%;
-  background-color: black;
-  z-index: 500;
-}
-
-/* main fixed release content - tab container */
-.mfrc-tc {
-
-}
-
-/* main fixed release content - tab */
-.mfrc-t {
-
+  padding: var(--main-equal-padding-container);
+  overflow-y: scroll;
 }
 
 /* page content container */
@@ -314,173 +358,120 @@ h6 {
 /* page content */
 .pc {
   height: 100%;
-  padding: 105px 0 10px 10px; /* top - right - bottom - left */
+  padding: 75px 0 10px 13px; /* top - right - bottom - left */
 }
 
-/* main fixed desktop menu */
-.mfdm {
-  flex: 0 0 150px;
-  padding: 0 5px;
-  line-height: 1.75;
-}
-
-.dlm {
+/* genres navigation panel */
+.gnp {
   display: none;
-  min-width: 150px;
+  width: 150px;
+  flex-shrink: 0;
 }
 
-.Flex-c2 {
-  display: flex;
-  flex-direction: row;
-}
-
-/* main fixed mobile menu */
-.mfmm {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: none;
-}
-
-/* main fixed mobile menu - tab container */
-.mfmm-tc {
-  width: 300px;
-  height: 100%;
-  background-color: white;
-}
-
-/* main fixed mobile menu - tab */
-.mfmm-t {
-  position: relative;
-  height: 100%;
-  padding: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-/* main fixed mobile menu - main sections link */
-.mfmm-msl {
-  text-decoration: none;
-  color: var(--main-theme-color);
-}
-
-.mfh-ph-dmn a {
-  text-decoration: none;
-  color: white;
-  padding-right: 15px;
-  display: none;
-}
-
-.ai:hover {
-  text-decoration: underline;
-}
-
-.fg, .sg {
+/* featured music release box */
+.fmrb {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* grid - item */
-.gi {
+/* secondary music release box */
+.smrb {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* featured music release */
+.fmr {
   width: calc(100% / 2); /* 50% */
   padding-right: 10px;
   margin-bottom: 60px;
   cursor: pointer;
 }
 
-.fg-icaf {
+/* featured music release - cover art placeholder */
+.fmr-cap {
   width: 100%;
   height: 0;
   padding-bottom: 100%;
   position: relative;
   background-color: lightgrey;
 }
-
-.fg-icai {
+/* featured music release - cover art */
+.fmr-ca {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-.fg-im {
-  overflow: hidden;
-}
-
-.fgc {
+/* featured releases caroussel dots */
+.frcd {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: center;
 }
 
-.fgc-cb {
+.c-dot {
   width: 10px;
   height: 10px;
+  margin: 0 10px;
   display: inline-block;
   border-radius: 100%;
-  background-color: blue;
+  background-color: grey;
+  cursor: pointer;
 }
 
+/* featured releases caroussel squares */
+.frcs {
+
+}
 
 /* beginning of media queries */
 
 /* on screens that are 480px or more */
 @media screen and (min-width: 475px) {
 
-  #mfh-sh-nav-link-3 {
-    display: block;
-  }
-
-  .gi {
+  /* featured music release */
+  .fmr {
     width: 33.33% !important ;
   }
-
-  .fg-icaf  {
-    padding-bottom: 100%;
-  }
-
 }
 
 /* on screens that are 480px or more */
 @media screen and (min-width: 630px) {
 
-  .dlm {
-    display: block;
-  }
-
-  .gi {
+  /* featured music release */
+  .fmr {
     width: 25% !important ;
-  }
-
-  .fg-icaf  {
-    padding-bottom: 100%;
-  }
-
-  .mfh-ph-icon-1 {
-    display: none;
   }
 }
 
 /* on screens that are 480px or more */
 @media screen and (min-width: 1040px) {
 
-  .fg-i {
-    width: 20% !important;
-  }
-
-  .fg-icaf {
-    padding-bottom: 100%;
-  }
-
-  .mfh-ph-dm {
+  /* main fixed header - desktop main sections navigation */
+  .mfh-dmsn {
     display: block;
+  }
+
+  /* featured music release */
+  .fmr {
+    width: 16.66% !important;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  /* genres navigation pannel */
+  .gnp {
+    display: block;
+  }
+
+  /* page content - flex */
+  .pc-flex {
+    display: flex;
   }
 }
