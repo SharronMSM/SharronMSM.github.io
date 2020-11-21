@@ -350,7 +350,6 @@ h6 {
 
 /* page content container */
 .pcc {
-  height: 4000px; /* */
   width: 100%;
   background-color: inherit;
 }
@@ -420,16 +419,26 @@ h6 {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  flex-grow: 1;
 }
 
 /* carousel - box */
 .c-box {
-  width: 20%;
+  flex: 1 1 0px;
   height: 5px;
-  margin: 0 10px;
+  margin: 0 2px;
   display: inline-block;
-  background-color: grey;
+  background-color: #d3d3d3;
   cursor: pointer;
+}
+
+/* carousel box:hover */
+.c-box:hover {
+  background-color: grey;
+}
+
+.smrb .music-release {
+  margin-bottom: 80px;
 }
 
 .gnp ul li {
