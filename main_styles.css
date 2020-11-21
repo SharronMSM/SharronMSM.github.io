@@ -127,7 +127,7 @@ h6 {
 
 /* main fixed header - primary header container */
 .mfh-phc {
- height: 52px;
+ height: 55px;
  width: 100%;
  position: fixed;
  top: 0;
@@ -364,8 +364,13 @@ h6 {
 /* genres navigation panel */
 .gnp {
   display: none;
-  width: 150px;
+  width: 170px;
   flex-shrink: 0;
+}
+
+/* all music release boxes */
+.amrb {
+  width: 100%;
 }
 
 /* featured music release box */
@@ -382,50 +387,54 @@ h6 {
   flex-wrap: wrap;
 }
 
-/* featured music release */
-.fmr {
+/* music release */
+.music-release {
   width: calc(100% / 2); /* 50% */
   padding-right: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   cursor: pointer;
 }
 
-/* featured music release - cover art placeholder */
-.fmr-cap {
+.fmr3, .fmr4, .fmr5, .fmr6, .fmr7 {
+  display: none;
+}
+
+/* music release - cover art placeholder */
+.mr-cap {
   width: 100%;
   height: 0;
   padding-bottom: 100%;
   position: relative;
   background-color: lightgrey;
 }
-/* featured music release - cover art */
-.fmr-ca {
+/* music release - cover art */
+.mr-ca {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-/* featured releases caroussel dots */
-.frcd {
+/* featured releases caroussel boxes */
+.frcb {
   width: 100%;
-  height: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.c-dot {
-  width: 10px;
-  height: 10px;
+/* carousel - box */
+.c-box {
+  width: 20%;
+  height: 5px;
   margin: 0 10px;
   display: inline-block;
-  border-radius: 100%;
   background-color: grey;
   cursor: pointer;
 }
 
-/* featured releases caroussel squares */
-.frcs {
-
+.gnp ul li {
+  font-weight: bold;
+  font-family: Arial;
 }
 
 /* beginning of media queries */
@@ -433,18 +442,24 @@ h6 {
 /* on screens that are 480px or more */
 @media screen and (min-width: 475px) {
 
-  /* featured music release */
-  .fmr {
+  .music-release {
     width: 33.33% !important ;
+  }
+
+  .fmr3 {
+    display: block;
   }
 }
 
 /* on screens that are 480px or more */
 @media screen and (min-width: 630px) {
 
-  /* featured music release */
-  .fmr {
+  .music-release {
     width: 25% !important ;
+  }
+
+  .fmr4 {
+    display: block;
   }
 }
 
@@ -456,9 +471,12 @@ h6 {
     display: block;
   }
 
-  /* featured music release */
-  .fmr {
+  .music-release {
     width: 16.66% !important;
+  }
+
+  .fmr5, .fmr6  {
+    display: block;
   }
 
   .menu-button {
