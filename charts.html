@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Explore / MajorScale Music</title>
+  <title>Charts / MajorScale Music</title>
   <link rel="stylesheet" href="main_styles.css" />
   <link rel="stylesheet" href="stream_explore.css" />
   <meta name="description" content="" />
@@ -20,145 +20,160 @@
 <body>
 
   <!-- main fixed header -->
-  <header class="mfh">
-    <div class="mfh-phc">
+    <header class="mfh-phc">
       <div class="mfh-ph">
 
+        <div class="mfh-ph-left">
 
-        <div style="display: flex;">
-          <!-- Hamburger menu icon -->
-          <div class="mfh-ph-icon-1" onclick="showMfmm()">
-            <svg width="30px" height="20px" viewbox="0 0 35 20">
-              <path stroke-width="2px" d="M 1 1 h 21.1 M 1 8.8 h 15.1 M 1 16.7 h 21.1" stroke="white" fill="white" stroke-width="2px" />
-            </svg>
+          <!-- menu button -->
+          <button class="menu-button" onclick="showMfmm()">
+            <!-- menu button top line using ::before -->
+            <span class="mbml"></span><!-- menu button middle line -->
+            <!-- menu button top line using ::after -->
+          </button>
+
+          <!-- main fixed header - desktop main sections navigation -->
+          <div class="mfh-dmsn">
+            <a href="index.html" class="mfh-dmsn-link">Stream</a>
+            <a href="charts.html" class="mfh-dmsn-link  mfh-active">Charts</a>
+            <a href="#" class="mfh-dmsn-link">Broadcast</a>
+            <a href="#" class="mfh-dmsn-link">Events</a>
           </div>
-
-          <!-- Website logo -->
-          <a href="#">
-            <img src="images/logo.png" alt="" width="100px" height="24px" />
-          </a>
         </div>
 
-        <div style="display: flex; align-items: center;">
-          <!-- Search icon -->
+        <div class="mfh-ph-right">
+          <!-- Search icon SVG -->
+          <svg class="search-icon" width="25px" height="25px">
+            <title>Search</title>
+            <path d="M18 16.5l-5.14-5.18h-.35a7 7 0 10-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 112 7a5 5 0 0110 0z" />
 
-          <img src="images/search.png" alt="" width="20px" height="20px" />
+          </svg>
+          <!-- Account icon SVG -->
+          <svg class="account-icon" width="25px" height="25px">
+            <path d="M 0 1
+                     " />
 
-
-          <!-- Account icon -->
-          <img src="images/account.png" alt="" width="40px" height="40px" style="position: relative; left: 10px;" />
-
-        </div>
-
-
-        <div class="mfh-ph-dm">
-          <a href="index.html" class="mfh-ph-dml  active">Explore</a>
-          <a href="charts.html" class="mfh-ph-dml">Charts</a>
-          <a href="#" class="mfh-ph-dml">Events</a>
-          <a href="#" class="mfh-ph-dml">News</a>
+          </svg>
         </div>
 
       </div>
-    </div>
-
-    <div class="mfh-shc">
-      <div class="mfh-sh">
-
-        <nav class="mfh-sh-nav">
-          <a id="mfh-sh-nav-link-1" class="mfh-sh-nav-link" href="index.html">Explore</a>
-          <a class="mfh-sh-nav-link" href="charts.html">Charts</a>
-          <a id="mfh-sh-nav-link-3" class="mfh-sh-nav-link" href="#">Trending</a>
-          <a id="mfh-sh-nav-link-4" class="mfh-sh-nav-link" href="#">New</a>
-        </nav>
-
-      </div>
-    </div>
-  </header>
+    </header>
   <!-- main fixed header -->
+
+  <!-- main fixed mobile menu -->
+  <div class="mfmm-ob" onclick="hideMfmm()">
+    <div class="mfmm-sbc">
+      <div class="mfmm-sb">
+
+        <!--  mobile main sections navigation -->
+        <div class="mmsn">
+          <h4>STREAM</h4>
+          <a href="index.html" class="mmsn-link">Explore</a>
+          <a href="index.html" class="mmsn-link">Charts</a>
+          <h4>BROADCAST</h4>
+          <a href="index.html" class="mmsn-link">Live Stream</a>
+          <h4>EVENTS</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- main fixed mobile menu -->
+
+  <!-- log in / sign in -->
+  <div class="lisi-ob">
+
+  </div>
 
   <!-- main fixed audio player  -->
   <div class="mfap">
-    <div class="mfap-ec">
-      <div class="mfap-e">
 
-        <div>
-          <div>
-            <div>
-              <img src="../images/CP1.jpg"  />
-            </div>
-          </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="mfap-ec">
+        <div class="mfap-e">
+
         </div>
-
       </div>
-    </div>
 
-    <div class="mfap-bc" onclick="showExtendedMfap()">
+    <div class="mfap-bc" onclick="showMfapExtension()">
       <div class="mfap-b">
 
-        <div style="display: flex;">
-          <div class="mfap-b-dpc">
-            <img src="images/CP1.jpg" alt="" width="100%" height="100%" />
-          </div>
-          <div>
-            <p>Song title</p>
-            <p>Song artists</p>
-          </div>
-          <audio controls>
-            <source src="horse.ogg" type="audio/ogg">
-            <source src="horse.mp3" type="audio/mpeg">
-            Your browser does not support the audio tag.
-          </audio>
-        </div>
+        <img src="images/ca4.jpg" alt="" />
+
 
       </div>
     </div>
-  </div>
-  <!-- main fixed audio player  -->
+  </div><!-- main fixed audio player  -->
 
 
-  <!-- page content -->
-  <div class="pcc">
-    <div class="pc">
+  <div class="pcc"><!-- page content container -->
+    <div class="pc"><!-- page content -->
 
-      <h3>Charts</h3>
-      <div class="cb">
-        <div class="ci"></div>
-        <div class="ci"></div>
-        <div class="ci"></div>
-        <div class="ci"></div>
-        <div class="ci"></div>
-      </div>
+      <div class="pc-flex"><!-- page content - flex -->
+
+        <div class="gnp"><!-- genres navigation panel -->
+          <ul>
+            <li>Blues</li>
+            <li>Heavy metal</li>
+            <li>Classical</li>
+            <li>Musical theatre</li>
+            <li>Rhythm and blues</li>
+            <li>Country</li>
+            <li>Punk rock</li>
+            <li>Soul</li>
+            <li>Reggae</li>
+            <li>House</li>
+            <li>Funk</li>
+            <li>Electronic</li>
+            <li>Disco</li>
+            <li>Techno</li>
+            <li>EDM</li>
+            <li>Alternative rock</li>
+            <li>Popular</li>
+            <li>Gospel</li>
+            <li>Swing</li>
+            <li>Trance</li>
+            <li>Ambient</li>
+            <li>Industrial</li>
+            <li>Dance</li>
+            <li>Dubstep</li>
+            <li>Instrumental</li>
+            <li>Orchestra</li>
+            <li>Singing</li>
+            <li>World</li>
+            <li>Indie rock</li>
+            <li>Ska</li>
+            <li>Trance</li>
+            <li>Ambient</li>
+            <li>Industrial</li>
+            <li>Dance</li>
+            <li>Dubstep</li>
+            <li>Instrumental</li>
+            <li>Orchestra</li>
+            <li>Singing</li>
+            <li>World</li>
+            <li>Indie rock</li>
+            <li>Ska</li>
+            <li>Trance</li>
+            <li>Ambient</li>
+            <li>Industrial</li>
+            <li>Dance</li>
+            <li>Dubstep</li>
+            <li>Instrumental</li>
+            <li>Orchestra</li>
+            <li>Singing</li>
+            <li>World</li>
+            <li>Indie rock</li>
+            <li>Ska</li>
+          </ul>
+        </div><!-- genres navigation panel -->
 
 
-    </div>
-  </div>
-  <!-- page content -->
 
-  <!-- main fixed mobile menu -->
-  <div class="mfmm" onclick="hideMfmm()">
-    <div class="mfmm-tc">
-      <div class="mfmm-t">
-        <a href="index.html">Stream</a>
-        <a href="#">Broadcast</a>
-        <a href="#">Events</a>
-        <a href="#">News</a>
-      </div>
-    </div>
-  </div>
-  <!-- main fixed mobile menu -->
 
-  <!-- main fixed release content -->
-  <div class="mfrct" onclick="hideMfrct()">
+      </div><!-- page content - flex -->
 
-  </div>
-  <!-- main fixed release content -->
-
-  <!-- Desktop footer -->
-  <footer></footer>
+    </div><!-- page content -->
+  </div><!-- page content container -->
 
 
 
