@@ -1,0 +1,91 @@
+/* CSS Reset */
+
+/* A */
+/* Resetting browser defaults */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt,
+em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li,
+mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup,
+table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0; /* A - 1 */
+  padding: 0; /* A - 2 */
+  border: 0; /* A - 3 */
+  outline: 0; /* A - 4 */
+  vertical-align: baseline; /* A - 5 */
+  background: transparent; /* A - 6 */
+  font-size: 100%; /* A - 7 */
+  font: inherit; /* A - 8 */
+}
+
+/* B */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+ display: block; /* B - 1 */
+}
+
+/* C */
+ol, ul {
+ list-style: none; /* C - 1 */
+}
+
+/* D */
+blockquote, q {
+ quotes: none; /* D - 1 */
+}
+
+/* E */
+blockquote:before, blockquote:after, q:before, q:after {
+ content: ""; /* E - 1 */
+ content: none; /* E - 2 */
+}
+
+/* F */
+*, *:before, *:after {
+ box-sizing: inherit; /* F - 1 */
+}
+
+/* CSS Normalize */
+
+/* AA */
+/* Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong {
+ font-weight: bolder; /* AA - 1 */
+}
+
+/* BB */
+/* Remove the default vertical scrollbar in IE 10+. */
+textarea {
+ overflow: auto; /* BB - 1 */
+}
+
+/* CC */
+/* Remove the gray background on active links in IE 10. */
+a {
+  background-color: transparent; /* CC - 1 */
+}
+
+/* DD */
+img {
+  border-style: none; /* DD - 1 */
+  max-width: 100%; /* DD - 2 */
+  display: block; /* DD - 3 */
+}
+
+/* EE */
+embed, iframe, object, video {
+  max-width: 100%; /* EE - 1 */
+  display: block; /* EE - 2 */
+}
+
+/* Different browsers style the borders for forms elements and buttons differently, so it is best to declare the following: */
+input, textarea, button {
+  border: 1px solid grey;
+}
+
+input, textarea, select, button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+[hidden] {
+  display: none;
+}
