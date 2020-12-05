@@ -1,5 +1,7 @@
 /* CSS Reset & Normalize */
+
 /* A */
+/* Resetting browser defaults */
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt,
 em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li,
 mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup,
@@ -19,29 +21,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  display: block; /* B - 1 */
 }
 
+/* C */
 ol, ul {
- list-style: none;
+ list-style: none; /* C - 1 */
 }
 
+/* D */
 blockquote, q {
- quotes: none;
+ quotes: none; /* D - 1 */
 }
 
+/* E */
 blockquote:before, blockquote:after, q:before, q:after {
- content: "";
- content: none;
+ content: ""; /* E - 1 */
+ content: none; /* E - 2 */
 }
 
-textarea {
- overflow: auto;
-}
-
-b, strong {
- font-weight: bolder;
-}
-
+/* F */
 *, *:before, *:after {
- box-sizing: inherit;
+ box-sizing: inherit; /* F - 1 */
+}
+
+/* CSS Normalize */
+
+/* AA */
+/* Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong {
+ font-weight: bolder; /* AA - 1 */
+}
+
+/* BB */
+/* Remove the default vertical scrollbar in IE 10+. */
+textarea {
+ overflow: auto; /* BB - 1 */
+}
+
+/* CC */
+/* Remove the gray background on active links in IE 10. */
+a {
+  background-color: transparent; /* CC - 1 */
+}
+
+img, video {
+  max-width: 100%;
 }
 
 /* CSS Variables */
@@ -75,7 +97,6 @@ body {
 img {
   max-width: 100%;
   border-style: none;
-
 }
 
 /* h1 to h6 */
