@@ -1,4 +1,4 @@
-/* CSS Reset & Normalize */
+/* CSS Reset */
 
 /* A */
 /* Resetting browser defaults */
@@ -62,17 +62,21 @@ a {
   background-color: transparent; /* CC - 1 */
 }
 
-img, video {
+/* DD */
+img {
+  border-style: none; /* DD - 1 */
+  max-width: 100%; /* DD - 2 */
+  display: block; /* DD - 3 */
+}
+
+video {
   max-width: 100%;
+  height: auto;
 }
 
 /* CSS Variables */
 :root {
   --main-theme-color: #484140;
-  /* --secondary-theme-color: ; */
-  /* --main-theme-font-family: ; */
-  /* --secondary-theme-font-family: ; */
-  /* --base-white-color: ; */
   --main-equal-padding-container: 0 13px;
 }
 
@@ -92,11 +96,6 @@ body {
  overflow-x: hidden;
  overflow-y: scroll;
  min-width: 320px;
-}
-
-img {
-  max-width: 100%;
-  border-style: none;
 }
 
 /* h1 to h6 */
