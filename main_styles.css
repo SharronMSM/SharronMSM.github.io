@@ -4,74 +4,6 @@
   --main-equal-padding-container: 0 13px;
 }
 
-html {
- box-sizing: border-box;
- -webkit-text-size-adjust: 100%;
- -ms-text-size-adjust: 100%;
- height: 100%; /* do I neeed this? */
-}
-
-body {
- background-color: white;
- font-size: 14px;
- font-family: ;
- color: #333;
- line-height: 1.15;
- overflow-x: hidden;
- overflow-y: scroll;
- min-width: 320px;
-}
-
-/* h1 to h6 */
-h1, h2, h3, h4, h5, h6 {
-  font-family: ;
-  line-height: 1;
-}
-
-/* heading - type 1 */
-h1 {
-  font-size: 24px;
-}
-
-/* heading - type 2 */
-h2 {
-  font-size: 22px;
-}
-
-/* heading - type 3 */
-h3 {
-  font-size: 20px;
-  padding-bottom: 10px;
-  font-family: "Trebuchet MS";
-}
-
-/* heading - type 4 */
-h4 {
-  font-size: 16px;
-  font-family: "Trebuchet MS";
-  font-weight: bold;
-  color: grey;
-}
-
-/* heading - type 5 - track title */
-h5 {
-  font-size: 16px;
-  font-family: "Trebuchet MS";
-  line-height: 1.15;
-  padding-top: 5px;
-  font-weight: bold;
-}
-
-/* heading - type 6 - track artist */
-h6 {
-  font-size: 13px;
-  font-family: "Trebuchet MS";
-  line-height: 1.15;
-  padding-top: 2px;
-  color: grey;
-  font-weight: bold;
-}
-
 /* main fixed header - primary header container */
 .mfh-phc {
  height: 55px;
@@ -106,11 +38,10 @@ h6 {
 /* menu button */
 .menu-button {
   position: relative;
-  width: 25px;
-  height: 25px;
+  width: 20px;
   padding: 0; /* takes away the default padding it has for some reason */
   border: none;
-  background-color: transparent;
+  background-color: transparent; /* Forces the background color to be transparent */
   cursor: pointer;
   line-height: 1; /* do I need this? */
 }
@@ -121,7 +52,7 @@ h6 {
   position: absolute;
   top: 5px;
   display: block;
-  width: 22px;
+  width: 100%;
   height: 2px;
   border-radius: 1px;
   background-color: white;
@@ -131,7 +62,7 @@ h6 {
 /* menu button middle line */
 .mbml {
   display: block;
-  width: 22px;
+  width: 100%;
   height: 2px;
   border-radius: 1px;
   background-color: white;
@@ -144,7 +75,7 @@ h6 {
   position: absolute;
   top: 17px;
   display: block;
-  width: 22px;
+  width: 100%;
   height: 2px;
   border-radius: 1px;
   background-color: white;
