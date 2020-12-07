@@ -152,7 +152,8 @@
 /* main fixed mobile menu - side bar */
 .mfmm-sb {
   height: 100%;
-  padding: 20px;
+  padding: var(--main-equal-padding-container);
+  padding-top: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -166,6 +167,9 @@
   display: block;
   padding-bottom: 15px;
   font-family: "Trebuchet MS";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* mobile main sections navigation - link */
