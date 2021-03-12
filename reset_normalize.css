@@ -1,85 +1,81 @@
-/* CSS Reset */
-
-/* A */
-/* Resetting browser defaults */
+/* 1 */
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt,
 em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li,
 mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup,
 table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-  margin: 0; /* A - 1 */
-  padding: 0; /* A - 2 */
-  border: 0; /* A - 3 */
-  outline: 0; /* A - 4 */
-  vertical-align: baseline; /* A - 5 */
-  background: transparent; /* A - 6 */
-  font-size: 100%; /* A - 7 */
-  font: inherit; /* A - 8 */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+  font: inherit;
 }
 
-/* B */
+/* 2 */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
- display: block; /* B - 1 */
+ display: block;
 }
 
-/* C */
+/* 3 */
 ol, ul {
- list-style: none; /* C - 1 */
+ list-style: none;
 }
 
-/* D */
+/* 4 */
 blockquote, q {
- quotes: none; /* D - 1 */
+ quotes: none;
 }
 
-/* E */
+/* 5 */
 blockquote:before, blockquote:after, q:before, q:after {
- content: ""; /* E - 1 */
- content: none; /* E - 2 */
+ content: "";
+ content: none;
 }
 
-/* F */
+/* 6 */
 *, *:before, *:after {
- box-sizing: inherit; /* F - 1 */
+ box-sizing: inherit;
 }
 
-/* CSS Normalize */
-
-/* AA */
-/* Add the correct font weight in Chrome, Edge, and Safari. */
+/* 7 */
 b, strong {
- font-weight: bolder; /* AA - 1 */
+ font-weight: bolder; /* G - 1 */
 }
 
-/* BB */
+/* 8 */
 /* Remove the default vertical scrollbar in IE 10+. */
 textarea {
- overflow: auto; /* BB - 1 */
+ overflow: auto; /* H - 1 */
 }
 
-/* CC */
+/* 9 */
 /* Remove the gray background on active links in IE 10. */
 a {
-  background-color: transparent; /* CC - 1 */
+  background-color: transparent; /* I - 1 */
 }
 
-/* DD */
+/* 10 */
 img {
-  border-style: none; /* DD - 1 */
-  max-width: 100%; /* DD - 2 */
-  display: block; /* DD - 3 */
+  border-style: none; /* J - 1 */
+  max-width: 100%; /* J - 2 */
+  display: block; /* J - 3 */
 }
 
-/* EE */
+/* 11 */
 embed, iframe, object, video {
-  max-width: 100%; /* EE - 1 */
-  display: block; /* EE - 2 */
+  max-width: 100%; /* K - 1 */
+  display: block; /* K - 2 */
 }
 
+/* 12 */
 /* Different browsers style the borders for forms elements and buttons differently, so it is best to declare the following: */
 input, textarea, button {
   border: 1px solid grey;
 }
 
+/* 13 */
 /* Browsers don’t inherit typography for forms and buttons, so I'll make them inherit from their ancestor elements. */
 input, textarea, select, button {
   color: inherit;
@@ -87,10 +83,12 @@ input, textarea, select, button {
   letter-spacing: inherit;
 }
 
+/* 14 */
 [hidden] {
   display: none;
 }
 
+/* 15 */
 html {
  box-sizing: border-box;
  -webkit-text-size-adjust: 100%;
