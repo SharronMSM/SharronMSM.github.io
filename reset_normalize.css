@@ -1,40 +1,40 @@
-/* 1 */
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt,
 em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li,
 mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup,
 table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
-  background: transparent;
-  font-size: 100%;
-  font: inherit;
+  margin: 0; /* Takes away any default margin set by the user agent and resets/overrides it to 0. */
+  padding: 0; /* Takes away any default padding set by the user agent and resets/overrides it to 0. */
+  border: 0; /* Takes away any default border set by the user agent and resets/overrides it to 0. */
+  outline: 0; /* Takes away any default outline set by the user agent and resets/overrides it to 0. */
+  vertical-align: baseline; /* Makes sure the vertical-align is set to the default value of baseline. */
+  background: transparent; /* Makes sure the background is set to the default value of transparent. */
+  font-size: 100%; /* Makes sure the font-size is set to the default value of 100% (100% = 1em = 1rem = 16px = 12pt). */
+  font: inherit; /* Makes sure the font is inherited by the child elements. */
 }
 
-/* 2 */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
- display: block;
+ display: block; /* Makes sure the display property of these new HTML5 elements have a value of block so they can behave as intended on some older browsers. */
 }
 
-/* 3 */
+/* Correct `block` display not defined for any HTML5 element in IE 8/9. */
+/* Correct `block` display not defined for `details` or `summary` in IE 10/11. */
+/* Correct `block` display not defined for `main` in IE 11. */
+
 ol, ul {
- list-style: none;
+ list-style: none; /* Removes the bullets added by the user agent from all unordered lists (<ul>). */
 }
 
-/* 4 */
+/* list-style is the shorthand to set list-style-type, list-style-position and list-style-image properties all in one declaration. */
+
 blockquote, q {
  quotes: none;
 }
 
-/* 5 */
 blockquote:before, blockquote:after, q:before, q:after {
  content: "";
  content: none;
 }
 
-/* 6 */
 *, *:before, *:after {
  box-sizing: inherit;
 }
@@ -43,38 +43,30 @@ b, strong {
  font-weight: inherit;
 }
 
-/* 7 */
 b, strong {
- font-weight: bolder;
+ font-weight: bolder; /* Add the correct font weight in Chrome, Edge, and Safari. */
 }
 
-/* 8 */
-/* Remove the default vertical scrollbar in IE 10+. */
 textarea {
- overflow: auto;
+ overflow: auto; /* Remove the default vertical scrollbar in IE 10+. */
 }
 
-
-/* 10 */
 img {
-  border-style: none; /* J - 1 */
+  border-style: none; /* Remove the border on images inside links in IE 10. */
   max-width: 100%; /* J - 2 */
   display: block; /* J - 3 */
 }
 
-/* 11 */
 embed, iframe, object, video {
   max-width: 100%; /* K - 1 */
   display: block; /* K - 2 */
 }
 
-/* 12 */
 /* Different browsers style the borders for forms elements and buttons differently, so it is best to declare the following: */
 input, textarea, button {
   border: 1px solid grey;
 }
 
-/* 13 */
 /* Browsers don’t inherit typography for forms and buttons, so I'll make them inherit from their ancestor elements. */
 input, textarea, select, button {
   color: inherit;
@@ -82,12 +74,10 @@ input, textarea, select, button {
   letter-spacing: inherit;
 }
 
-/* 14 */
 [hidden] {
   display: none;
 }
 
-/* 15 */
 html {
  box-sizing: border-box;
  -webkit-text-size-adjust: 100%;
