@@ -39,22 +39,21 @@ blockquote:before, blockquote:after, q:before, q:after {
  box-sizing: inherit;
 }
 
+b, strong {
+ font-weight: inherit;
+}
+
 /* 7 */
 b, strong {
- font-weight: bolder; /* G - 1 */
+ font-weight: bolder;
 }
 
 /* 8 */
 /* Remove the default vertical scrollbar in IE 10+. */
 textarea {
- overflow: auto; /* H - 1 */
+ overflow: auto;
 }
 
-/* 9 */
-/* Remove the gray background on active links in IE 10. */
-a {
-  background-color: transparent; /* I - 1 */
-}
 
 /* 10 */
 img {
