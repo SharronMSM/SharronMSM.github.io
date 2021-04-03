@@ -40,10 +40,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 b, strong {
- font-weight: inherit;
-}
-
-b, strong {
  font-weight: bolder; /* Add the correct font weight in Chrome, Edge, and Safari. */
 }
 
@@ -59,7 +55,7 @@ img {
 
 embed, iframe, object, video {
   max-width: 100%;
-  display: block; 
+  display: block;
 }
 
 /* Different browsers style the borders for forms elements and buttons differently, so it is best to declare the following: */
@@ -74,12 +70,16 @@ input, textarea, select, button {
   letter-spacing: inherit;
 }
 
+template {
+  display: none; /* Add the correct display in IE. */
+}
+
 [hidden] {
   display: none; /* Add the correct display in IE 10. */
 }
 
 progress {
-  vertical-align: baseline; /* dd the correct vertical alignment in Chrome, Firefox, and Opera. */
+  vertical-align: baseline; /* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
 }
 
 html {
@@ -88,7 +88,15 @@ html {
  line-height: 1.15; /* Correct the line height in all browsers. */
  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
  -ms-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in IE on Windows phone. */
+ word-break: break-word; /* Breaks words to prevent overflow in all browsers. */
  height: 100%; /* do I neeed this? */
+}
+
+/* The word-break CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box. */
+
+
+audio, video {
+  display: inline-block; /* Add the correct display in IE 9-. */
 }
 
 /* h1 to h6 */

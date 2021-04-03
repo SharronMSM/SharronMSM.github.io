@@ -4,18 +4,24 @@
   --main-equal-padding-container: 0 13px;
 }
 
+/* main fixed header */
+#mfh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+ /*  */
+
 /* main fixed header - primary header container */
 .mfh-phc {
  height: 55px;
- width: 100%;
- position: fixed;
- top: 0;
- right: 0;
- left: 0;
- background-color: #272524;
- box-shadow: 1px 5px 6px 0 rgba(32, 33, 36, 0.28);
- z-index: 104;
+ background-color: var(--main-theme-color);
 }
+
+/* box-shadow: 1px 5px 6px 0 rgba(32, 33, 36, 0.28); */
 
 /* main fixed header - primary header */
 .mfh-ph {
@@ -26,6 +32,46 @@
  flex-direction: row;
  align-items: center;
  justify-content: space-between;
+}
+
+/* main fixed header - secondary header container */
+.mfh-shc {
+  height: 55px;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.5);
+}
+
+/* main fixed header - secondary header */
+.mfh-sh {
+
+}
+
+/* main fixed audio player */
+#mfap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: inherit;
+  z-index: 1;
+}
+
+/* main fixed audio player - base container */
+.mfap-bc {
+  height: 65px;
+  background-color: white;
+  border-top: 4px solid var(--main-theme-color);
+}
+
+/* main fixed audio player - base */
+.mfap-b {
+  position: relative;
+  height: 100%;
+  padding: var(--main-equal-padding-container);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 /* main fixed header - primary header - left */
@@ -112,21 +158,6 @@
   color: white;
 }
 
-/* main fixed header - secondary header container */
-.mfh-shc {
- display: none;
- height: 43px;
- width: 100%;
- box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.5);
- background-color: white; /* Giving it a value of inherit gives it a background color of transparent because its parent, the header tag, has a background color of transparent. So I have to explicitly define a background color of white */
-}
-
-/* main fixed header - secondary header */
-.mfh-sh {
-  position: relative;
-  height: 100%;
-}
-
 /* main fixed mobile menu - opacity background */
 .mfmm-ob {
   width: 100%;
@@ -138,7 +169,6 @@
   bottom: 0;
   left: 0;
   display: none;
-  z-index: 1000;
 }
 
 /* main fixed mobile menu - side bar container */
@@ -181,35 +211,6 @@
 /* log in sign in - opacity background */
 .lisi-ob {
 
-}
-
-/* main fixed audio player */
-.mfap {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 104; /* */
-  background-color: inherit;
-}
-
-/* main fixed audio player - base container */
-.mfap-bc {
-  height: 65px;
-  width: 100%;
-  background-color: white;
-  border-top: 4px solid var(--main-theme-color);
-  z-index: ;
-}
-
-/* main fixed audio player - base */
-.mfap-b {
-  position: relative;
-  height: 100%;
-  padding: var(--main-equal-padding-container);
-  display: flex;
-  align-items: center;
-  overflow: hidden;
 }
 
 /* main fixed audio player - extended container */
