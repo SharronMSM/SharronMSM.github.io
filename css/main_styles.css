@@ -30,7 +30,7 @@
 /* main fixed header - primary header - left */
 /* main fixed header - primary header - right */
 .mfh-ph-left, .mfh-ph-right {
-  height: 100%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -48,6 +48,8 @@
 .mfh-sh {
 
 }
+
+
 
 #fixed-audio-player {
   position: fixed;
@@ -73,6 +75,47 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+}
+
+/* fixed mobile menu modal */
+#fixed-mobile-menu-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Take full width of viewport */
+  height: 100%; /* Take full height of viewport */
+  background-color: rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+/* fixed mobile menu container */
+#fixed-mobile-menu-container {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+
+
+}
+
+/* fixed mobile menu */
+#fixed-mobile-menu {
+  height: 100%;
+  padding: var(--main-equal-padding-container);
+
+}
+
+/* content modal */
+#content-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 200;
+  padding-top: 100px;
 }
 
 /* menu button */

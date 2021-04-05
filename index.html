@@ -26,16 +26,12 @@
       <div class="primary-header">
         <div class="mfh-ph-left">
 
-          <!-- menu button -->
-          <button class="menu-button" onclick="showMfmm()">
-            <span class="mbml"></span><!-- menu button middle line -->
-          </button>
+          <div class="hamburger-menu">
+            <svg class="hamburger-menu-icon" width="40px" height="40px" viewbox="0 0" onclick="showMfmm()">
+              <path d="M" />
+            </svg>
+          </div>
 
-          <!--
-          <svg width="" height="" viewbox="">
-
-          </svg>
-          -->
 
          <a href="index.html">
           <img src="images/logo.png" width="85px" height="25px" />
@@ -91,24 +87,17 @@
       </div>
     </div>
   </div>
-  <!-- main fixed audio player -->
+  <!-- fixed audio player -->
 
-  <!-- main fixed mobile menu -->
-  <div class="mfmm-ob" onclick="hideMfmm()">
-    <div class="mfmm-sbc">
-      <div class="mfmm-sb">
-
-        <!--  mobile main sections navigation -->
-        <div class="mmsn">
-          <a href="index.html" class="mmsn-link">Stream</a>
-          <a href="charts.html" class="mmsn-link">Charts</a>
-          <a href="index.html" class="mmsn-link">Events</a>
-        </div>
+  <!-- fixed mobile menu -->
+  <div id="fixed-mobile-menu-modal" onclick="hideMfmm()">
+    <div id="fixed-mobile-menu-container">
+      <div id="fixed-mobile-menu">
 
       </div>
     </div>
   </div>
-  <!-- main fixed mobile menu -->
+  <!-- fixed mobile menu -->
 
 
   <div class="pcc"><!-- page content container -->

@@ -152,3 +152,7 @@ body {
  overflow-y: scroll;
  min-width: 320px;
 }
+
+svg {
+  pointer-events: none;
+}
