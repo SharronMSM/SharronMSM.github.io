@@ -1,11 +1,10 @@
 /* CSS Variables */
 :root {
-  --main-theme-color: #484140;
+  --main-theme-color: #141414;
   --main-equal-padding-container: 0 13px;
 }
 
-/* main fixed header */
-#mfh {
+#fixed-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,29 +12,32 @@
   z-index: 1;
 }
 
- /*  */
-
-/* main fixed header - primary header container */
-.mfh-phc {
+.primary-header-container {
  height: 55px;
  background-color: var(--main-theme-color);
+ /* box-shadow: 1px 5px 6px 0 rgba(32, 33, 36, 0.28); */
 }
 
-/* box-shadow: 1px 5px 6px 0 rgba(32, 33, 36, 0.28); */
-
-/* main fixed header - primary header */
-.mfh-ph {
+.primary-header {
  position: relative;
  height: 100%;
  padding: var(--main-equal-padding-container);
  display: flex;
  flex-direction: row;
- align-items: center;
  justify-content: space-between;
 }
 
-/* main fixed header - secondary header container */
-.mfh-shc {
+/* main fixed header - primary header - left */
+/* main fixed header - primary header - right */
+.mfh-ph-left, .mfh-ph-right {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.secondary-header-container {
   height: 55px;
   background-color: white;
   border-bottom: 1px solid grey;
@@ -47,8 +49,7 @@
 
 }
 
-/* main fixed audio player */
-#mfap {
+#fixed-audio-player {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -57,8 +58,8 @@
   z-index: 1;
 }
 
-/* main fixed audio player - base container */
-.mfap-bc {
+/* main fixed audio player - base - equal padding container */
+.mfap-b-epc {
   height: 65px;
   background-color: white;
   border-top: 4px solid var(--main-theme-color);
@@ -72,13 +73,6 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-}
-
-/* main fixed header - primary header - left */
-/* main fixed header - primary header - right */
-.mfh-ph-left, .mfh-ph-right {
-  display: flex;
-  flex-direction: row;
 }
 
 /* menu button */
@@ -239,7 +233,7 @@
 /* page content */
 .pc {
   height: 100%;
-  padding: 75px 0 10px 13px; /* top - right - bottom - left */
+  padding: 130px 0 10px 13px; /* top - right - bottom - left */
 }
 
 /* genres navigation panel */
@@ -271,7 +265,7 @@
 /* music release */
 .music-release {
   width: calc(100% / 2); /* 50% */
-  padding-right: 10px;
+  padding-right: 15px;
   margin-bottom: 40px;
   cursor: pointer;
 }

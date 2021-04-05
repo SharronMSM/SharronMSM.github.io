@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -18,18 +18,24 @@
 
 </head>
 
-<body dir="ltr">
+<body>
 
-  <!-- main fixed header -->
-  <header id="mfh">
-    <div class="mfh-phc">
-      <div class="mfh-ph">
+  <!-- fixed header -->
+  <header id="fixed-header">
+    <div class="primary-header-container">
+      <div class="primary-header">
         <div class="mfh-ph-left">
 
           <!-- menu button -->
           <button class="menu-button" onclick="showMfmm()">
             <span class="mbml"></span><!-- menu button middle line -->
           </button>
+
+          <!--
+          <svg width="" height="" viewbox="">
+
+          </svg>
+          -->
 
          <a href="index.html">
           <img src="images/logo.png" width="85px" height="25px" />
@@ -55,8 +61,8 @@
       </div>
     </div>
 
-    <div class="mfh-shc">
-      <div class="mfh-sh">
+    <div class="secondary-header-container">
+      <div class="secondary-header">
 
         <a href="index.html">
          <img src="images/logo.png" width="85px" height="25px" />
@@ -65,10 +71,10 @@
       </div>
     </div>
   </header>
-  <!-- main fixed header -->
+  <!-- fixed header -->
 
-  <!-- main fixed audio player -->
-  <div id="mfap">
+  <!-- fixed audio player -->
+  <div id="fixed-audio-player">
 
       <div class="mfap-ec">
         <div class="mfap-e">
@@ -76,7 +82,7 @@
         </div>
       </div>
 
-    <div class="mfap-bc" onclick="showMfapExtension()">
+    <div class="mfap-b-epc" onclick="showMfapExtension()">
       <div class="mfap-b">
 
         <img src="images/ca4.jpg" alt="" />
