@@ -25,19 +25,19 @@
  display: flex;
  flex-direction: row;
  justify-content: space-between;
+ align-items: center;
 }
 
 /* main fixed header - primary header - left */
 /* main fixed header - primary header - right */
 .mfh-ph-left, .mfh-ph-right {
-
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 
 .secondary-header-container {
+  display: none;
   height: 55px;
   background-color: white;
   border-bottom: 1px solid grey;
@@ -49,7 +49,9 @@
 
 }
 
-
+.hamburger-menu {
+  cursor: pointer;
+}
 
 #fixed-audio-player {
   position: fixed;
