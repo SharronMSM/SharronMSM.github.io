@@ -15,3 +15,14 @@ function showMfapExtension() {
 function hideMfapExtension() {
   document.getElementsByClassName('mfap-ec')[0].style.display = "none";
 }
+
+
+// Show fixed log in
+function showFli() {
+  document.getElementById('fixed-sign-in').style.display = "block";
+}
+
+// Hide fixed log in
+function hideFli() {
+  document.getElementById('fixed-sign-in').style.display = "none";
+}
