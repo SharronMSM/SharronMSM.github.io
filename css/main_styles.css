@@ -15,7 +15,6 @@
 .primary-header-container {
  height: 58px;
  background-color: var(--main-theme-color);
- /* box-shadow: 1px 5px 6px 0 rgba(32, 33, 36, 0.28); */
 }
 
 .primary-header {
@@ -24,22 +23,45 @@
  padding: var(--main-equal-padding-container);
  display: flex;
  flex-direction: row;
- justify-content: space-between;
- align-items: center;
 }
 
-/* main fixed header - primary header - left */
-/* main fixed header - primary header - right */
-.mfh-ph-left, .mfh-ph-right {
+#fixed-audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.ph-left {
+  height: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex-shrink: 0;
 }
 
-.mfh-ph-right {
+.ph-right {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   flex: 1 0 auto;
+}
 
+.fap-left {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.fap-right {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
 }
 
 
@@ -54,6 +76,19 @@
 /* main fixed header - secondary header */
 .mfh-sh {
 
+}
+
+.mobile-menu-icon {
+
+}
+
+.website-logo {
+
+}
+
+#footer {
+  height: 400px;
+  background-color: grey;
 }
 
 .hamburger-menu {
@@ -71,60 +106,58 @@
   background-color: white;
 }
 
-
-#fixed-audio-player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: inherit;
-  z-index: 1;
+.mfh-ph-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 /* main fixed audio player - base - equal padding container */
-.mfap-b-epc {
+.fap-base-container {
   height: 65px;
-  background-color: white;
+  background-color: inherit;
   border-top: 4px solid var(--main-theme-color);
 }
 
 /* main fixed audio player - base */
-.mfap-b {
+.fap-base {
   position: relative;
   height: 100%;
   padding: var(--main-equal-padding-container);
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-color: inherit;
 }
 
-/* fixed mobile menu modal */
-#fixed-mobile-menu-modal {
-  display: none;
+#fixed-mobile-menu {
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Take full width of viewport */
-  height: 100%; /* Take full height of viewport */
-  background-color: rgba(0,0,0,0.5);
   z-index: 100;
+  display: none;
 }
 
-/* fixed mobile menu container */
-#fixed-mobile-menu-container {
+.fixed-mobile-menu-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.fixed-mobile-menu-container {
   width: 300px;
   height: 100%;
   background-color: white;
-
-
 }
 
-/* fixed mobile menu */
-#fixed-mobile-menu {
+.fixed-mobile-menu-content {
+  position: relative;
   height: 100%;
-  padding: var(--main-equal-padding-container);
-
+  padding: 15px 20px;
 }
+
 
 /* content modal */
 #content-modal {
@@ -137,6 +170,30 @@
   background-color: rgba(0,0,0,0.5);
   z-index: 200;
   padding-top: 100px;
+}
+
+#fixed-signup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+#fixed-signup {
+  position: relative;
+  width: calc(100% - 30px);
+  height: 400px;
+  background-color: white;
+  margin: 40px 15px;
+  /* overflow: auto; */
+
 }
 
 /* menu button */
@@ -205,7 +262,7 @@
 /* main fixed header - desktop main sections navigation - link */
 .mfh-dmsn-link {
   text-decoration: none;
-  color: #9b9b9b;
+  color: white;
   padding-left: 30px;
   font-family: "Trebuchet MS", sans-serif;
   font-size: 16px;
@@ -288,16 +345,10 @@
   overflow-y: scroll;
 }
 
-/* page content container */
-.pcc {
-  width: 100%;
-  background-color: inherit;
-}
-
 /* page content */
 .pc {
   height: 100%;
-  padding: 130px 0 10px 13px; /* top - right - bottom - left */
+  padding: 90px 13px 10px 13px; /* top - right - bottom - left */
 }
 
 /* genres navigation panel */
@@ -386,10 +437,20 @@
   font-family: Arial;
 }
 
+.cab {
+  background-color: black;
+  border-color: black;
+  color: #fff;
+}
+
+.create-account-button {
+
+}
+
 /* beginning of media queries */
 
 /* on screens that are 480px or more */
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 575px) {
 
   .music-release {
     width: 33.33% !important ;
@@ -420,6 +481,15 @@
     display: block;
   }
 
+  .hamburger-menu {
+    display: none;
+  }
+
+  .primary-header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .music-release {
     width: 16.66% !important;
   }
@@ -435,6 +505,14 @@
   /* genres navigation pannel */
   .gnp {
     display: block;
+  }
+
+  .primary-header-container {
+    height: 65px;
+  }
+
+  .fap-base-container {
+    height: 69px;
   }
 
   /* page content - flex */

@@ -158,6 +158,10 @@ svg {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*
 The svg element here has display: inline, thus is treated like text. It thus also observes the line-height property which controls how much extra vertical space each line gets. For readability reasons we don't cram lines directly together.
 Switching to display: block on the svg makes the div fit exactly, as does setting line-height: 0 on the div.

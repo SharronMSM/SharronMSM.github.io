@@ -1,11 +1,11 @@
-// Show Main fixed mobile menu
+// Show fixed mobile menu
 function showMfmm() {
-  document.getElementById('fixed-mobile-menu-modal').style.display = "block";
+  document.getElementById('fixed-mobile-menu').style.display = "block";
 }
 
 // Hide Main fixed mobile menu
 function hideMfmm() {
-  document.getElementById('fixed-mobile-menu-modal').style.display = "none";
+  document.getElementById('fixed-mobile-menu').style.display = "none";
 }
 
 function showMfapExtension() {
@@ -17,12 +17,15 @@ function hideMfapExtension() {
 }
 
 
-// Show fixed log in
-function showFli() {
-  document.getElementById('fixed-sign-in').style.display = "block";
+
+
+
+
+function showFixedSignupModal() {
+  document.getElementById('fixed-signup-modal').style.display = "block";
+  document.getElementById('fixed-signup-modal').style.display = "flex";
 }
 
-// Hide fixed log in
-function hideFli() {
-  document.getElementById('fixed-sign-in').style.display = "none";
+function hideFixedSignupModal() {
+  document.getElementById('fixed-signup-modal').style.display = "none";
 }
