@@ -1,0 +1,522 @@
+/* CSS Variables */
+:root {
+  --main-theme-color: #141414;
+  --main-equal-padding-container: 0 13px;
+}
+
+#fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.primary-header-container {
+ height: 58px;
+ background-color: var(--main-theme-color);
+}
+
+.primary-header {
+ position: relative;
+ height: 100%;
+ padding: var(--main-equal-padding-container);
+ display: flex;
+ flex-direction: row;
+}
+
+#fixed-audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.ph-left {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ph-right {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.fap-left {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.fap-right {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+}
+
+
+.secondary-header-container {
+  display: none;
+  height: 55px;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.5);
+}
+
+/* main fixed header - secondary header */
+.mfh-sh {
+
+}
+
+.mobile-menu-icon {
+
+}
+
+.website-logo {
+
+}
+
+#footer {
+  height: 400px;
+  background-color: grey;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+#fixed-sign-in {
+  display: none;
+  height: 300px;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+.mfh-ph-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* main fixed audio player - base - equal padding container */
+.fap-base-container {
+  height: 65px;
+  background-color: inherit;
+  border-top: 4px solid var(--main-theme-color);
+}
+
+/* main fixed audio player - base */
+.fap-base {
+  position: relative;
+  height: 100%;
+  padding: var(--main-equal-padding-container);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: inherit;
+}
+
+#fixed-mobile-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+.fixed-mobile-menu-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.fixed-mobile-menu-container {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+}
+
+.fixed-mobile-menu-content {
+  position: relative;
+  height: 100%;
+  padding: 15px 20px;
+}
+
+
+/* content modal */
+#content-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 200;
+  padding-top: 100px;
+}
+
+#fixed-signup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+#fixed-signup {
+  position: relative;
+  width: calc(100% - 30px);
+  height: 400px;
+  background-color: white;
+  margin: 40px 15px;
+  /* overflow: auto; */
+
+}
+
+/* menu button */
+.menu-button {
+  position: relative;
+  width: 20px;
+  padding: 0; /* takes away the default padding it has for some reason */
+  border: none;
+  background-color: transparent; /* Forces the background color to be transparent */
+  cursor: pointer;
+  line-height: 1; /* do I need this? */
+}
+
+/* menu button top line */
+.menu-button::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+  pointer-events: none; /* do I need this? */
+}
+
+/* menu button middle line */
+.mbml {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+  pointer-events: none; /* do I need this? */
+}
+
+/* menu button bottom line */
+.menu-button::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+  pointer-events: none; /* do I need this? */
+}
+
+/* search icon SVG */
+.search-icon {
+  width: 25px; /* width of svg viewport that overrides the svg width attribute */
+  height: 25px; /* height of svg viewport that overrides the svg height attribute */
+  stroke: white;
+  stroke-width: 1px;
+  flex-shrink: 0;
+  fill: white;
+}
+
+/* main fixed header - desktop main sections navigation */
+.mfh-dmsn {
+  display: flex;
+  display: none;
+}
+
+/* main fixed header - desktop main sections navigation - link */
+.mfh-dmsn-link {
+  text-decoration: none;
+  color: white;
+  padding-left: 30px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mfh-dmsn-link:hover {
+  color: white;
+}
+
+/* main fixed mobile menu - opacity background */
+.mfmm-ob {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+/* main fixed mobile menu - side bar container */
+.mfmm-sbc {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+}
+
+/* main fixed mobile menu - side bar */
+.mfmm-sb {
+  height: 100%;
+  padding: var(--main-equal-padding-container);
+  padding-top: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/* mobile main sections navigation */
+.mmsn {
+  font-size: 26px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 15px;
+  font-family: "Trebuchet MS";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* mobile main sections navigation - link */
+.mmsn-link {
+  text-decoration: none;
+  color: var(--main-theme-color);
+}
+
+/* log in sign in - opacity background */
+.lisi-ob {
+
+}
+
+/* main fixed audio player - extended container */
+.mfap-ec {
+  height: 270px;
+  width: 100%;
+  background-color: inherit;
+  display: none;
+  border-top: 1px solid black;
+}
+
+/* main fixed audio player - extended */
+.mfap-e {
+  position: relative;
+  height: 100%;
+  padding: var(--main-equal-padding-container);
+  overflow-y: scroll;
+}
+
+/* page content */
+.pc {
+  height: 100%;
+  padding: 90px 16px 10px 16px; /* top - right - bottom - left */
+}
+
+/* genres navigation panel */
+.gnp {
+  display: none;
+  width: 170px;
+  flex-shrink: 0;
+}
+
+/* all music release boxes */
+.amrb {
+  width: 100%;
+}
+
+/* featured music release box */
+.fmrb {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* secondary music release box */
+.smrb {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* music release */
+.music-release {
+  width: calc(100% / 2); /* 50% */
+  padding-right: 15px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.fmr3, .fmr4, .fmr5, .fmr6, .fmr7 {
+  display: none;
+}
+
+/* music release - cover art placeholder */
+.mr-cap {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  background-color: lightgrey;
+}
+/* music release - cover art */
+.mr-ca {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* featured releases caroussel boxes */
+.frcb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-grow: 1;
+}
+
+/* carousel - box */
+.c-box {
+  flex: 1 1 0px;
+  height: 5px;
+  margin: 0 2px;
+  display: inline-block;
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+/* carousel box:hover */
+.c-box:hover {
+  background-color: grey;
+}
+
+.smrb .music-release {
+  margin-bottom: 80px;
+}
+
+.gnp ul li {
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.cab {
+  background-color: black;
+  border-color: black;
+  color: #fff;
+}
+
+.create-account-button {
+
+}
+
+/* beginning of media queries */
+
+/* on screens that are 480px or more */
+@media screen and (min-width: 575px) {
+
+  .music-release {
+    width: 33.33% !important ;
+  }
+
+  .fmr3 {
+    display: block;
+  }
+}
+
+/* on screens that are 480px or more */
+@media screen and (min-width: 630px) {
+
+  .music-release {
+    width: 25% !important ;
+  }
+
+  .fmr4 {
+    display: block;
+  }
+}
+
+/* on screens that are 480px or more */
+@media screen and (min-width: 1040px) {
+
+  /* main fixed header - desktop main sections navigation */
+  .mfh-dmsn {
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .primary-header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .music-release {
+    width: 16.66% !important;
+  }
+
+  .fmr5, .fmr6  {
+    display: block;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  /* genres navigation pannel */
+  .gnp {
+    display: block;
+  }
+
+  .primary-header-container {
+    height: 65px;
+  }
+
+  .fap-base-container {
+    height: 69px;
+  }
+
+  /* page content - flex */
+  .pc-flex {
+    display: flex;
+  }
+}
