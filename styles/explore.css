@@ -10,13 +10,13 @@
   flex-direction: row; /* default flex-direction */
   flex-wrap: wrap;
   margin-top: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "Trebuchet MS", sans-serif;
 }
 
 .row-item {
-  margin-right: 20px;
-  margin-bottom: 60px;
+  margin-right: 16px;
+  margin-bottom: 50px;
   width: calc((100% - 20px) / 2);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .ri-rmi {
-  margin-top: 10px;
+  margin-top: 9px;
   font-size: 16px;
   margin-left: 5px;
 }

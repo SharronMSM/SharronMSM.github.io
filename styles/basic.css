@@ -44,7 +44,7 @@
 
 /* main fixed header --> primary header */
 #mfh-ph {
-  height: 57px;
+  height: 59px;
   background-color: #141414;
   display: flex;
   align-items: center;
@@ -159,7 +159,7 @@
 
 /* page content */
 #page-content {
-  margin-top: 83px;
+  margin-top: 87px;
   padding: var(--main-layout-padding);
 }
 
