@@ -5,64 +5,52 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>index.html</title>
+  <title>Home | MajorScale Music</title>
   <link rel="stylesheet" href="styles/initial.css" />
   <link rel="stylesheet" href="styles/basic.css" />
   <link rel="stylesheet" href="styles/explore.css" />
   <meta name="author" content="Sharron Kathiresu" />
-  <meta name="description" content="" />
+  <meta name="description" content="Music Website" />
   <script src="scripts/main-scripts.js"></script>
-
-  <!-- Facebook Open Graph -->
-  <!-- og:title -->
   <meta property"og:title" content="" />
-  <!-- og:url -->
   <meta property"og:url" content="" />
-  <!-- og:image -->
   <meta property"og:image" content="" />
-  <!-- og:description -->
   <meta property"og:description" content="" />
-  <!-- og:locale -->
   <meta property"og:locale" content="" />
-  <!-- og:site-name -->
   <meta property"og:site-name" content="www.majorscalemusic.com" />
 
 </head>
 
 <body dir="ltr">
 
-  <!-- main fixed header --> <!-- mfh -->
   <header id="main-fixed-header">
 
-    <!-- main fixed header _ primary header -->
     <div id="mfh-ph" onclick="SHOWmainFixedMobileMenu()">
 
-      <!-- main fixed header _ left -->
-      <div>
-
+      <div id="mfh-ph-left">
+        <svg></svg>
       </div>
-      <!-- end of: main fixed header _ left -->
 
-      <!-- main fixed header _ right -->
-      <div></div>
+      <div id="mfh-ph-right">
+        <svg></svg>
+        <svg></svg>
+      </div>
 
-      <!-- main fixed header _ primary header navigation -->
+      <!-- main fixed header - primary header - navigation -->
       <nav id="mfh-ph-nav">
         <a href="index.html">Explore</a>
         <a href="charts.html">Charts</a>
         <a href="events.html">Events</a>
-        <a href="events.html">News</a>
+        <a href="broadcast.html">Broadcast</a>
       </nav>
       <!-- end of: main fixed header primary header navigation -->
 
     </div>
-    <!-- end of: main fixed header _ primary header -->
 
-    <!-- main fixed header secondary header -->
     <div id="mfh-sh">
 
     </div>
-    <!-- end of: main fixed header _ secondary header -->
+
   </header>
   <!-- end of: main fixed header -->
 
@@ -71,14 +59,10 @@
   <!-- main fixed audio player --> <!-- mfap -->
   <div id="main-fixed-audio-player" onclick="SHOWmainFixedAudioPlayer()" ondblclick="HIDEmainFixedAudioPlayer()">
 
-    <!--- main fixed audio player _ extension -->
     <div id="mfap-extension">
 
-      <div  style="height: 25px;">
+      <div  style="height: 25px;"></div>
 
-      </div>
-
-     <!-- main fixed audio player _ extension _ row -->
       <div class="mfap-ext-row">
 
         <div class="mfap-ext-row-rcah">
@@ -238,10 +222,10 @@
 
         <!-- item 1 in row 1 -->
         <div class="row-item">
-          <a href="primary-music-content.html">
+          <a href="primary-music-content.html" download="download" >
           <!-- row item _ release cover art holder -->
           <div class="ri-rcah">
-            <img src="images/coverart-2.jpg" alt="" />
+            <img src="images/coverart-2.jpg"  alt="" />
 
 
           </div>
@@ -261,10 +245,10 @@
         <div class="row-item">
           <!-- row item _ release cover art holder -->
           <div class="ri-rcah">
-            <img src="images/coverart-2.jpg" alt="" />
+            <img src="images/coverart-3.jpg"   alt="" />
 
           </div>
-          <!-- row item  _release metadata info -->
+          <!-- row item  _ release metadata info -->
           <div class="ri-rmi">
             <p>Title of song</p>
             <p>Artists</p>
@@ -277,7 +261,7 @@
         <div class="row-item">
           <!-- row item _ release cover art holder -->
           <div class="ri-rcah">
-            <img src="images/coverart-2.jpg" alt="" />
+            <img src="images/coverart-4.jpg" alt="" />
 
           </div>
 
@@ -399,6 +383,7 @@
         <div class="row-item">
           <!-- row item _ release cover art holder -->
           <div class="ri-rcah">
+            <img src="images/coverart-4.jpg" alt="" />
 
           </div>
 
@@ -635,6 +620,10 @@
 
       </div>
       <!-- end of row 2 -->
+
+      <p style="text-align: center;">
+        show more...
+      </p>
 
 
       <h1 title="Trending">Top picks</h1>
@@ -890,8 +879,6 @@
 
   </div>
   <!-- end of: page content -->
-
-
 
 </body>
 

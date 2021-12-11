@@ -2,11 +2,16 @@
 
 /* CSS Variables */
 :root {
-  /* main layout padding */
+  /* main layout padding */ /* mfh-ph */ /* page content */
+  /* why not margin-right? why padding-right? */
   --main-layout-padding: 0 18px;
+  /* row item padding right */ /* row-item */
+  --row-item-margin-right: 20px;
   /* main layout primary color */
   --main-layout-primary-color: ;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* Custom Scrollbar */
 /* width */
@@ -32,109 +37,13 @@
 
 }
 
-/* WRAPPER */
-/* main fixed header */ /* mfh */
-#main-fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
+/* page content */
+#page-content {
+  margin: var(--main-layout-padding);
+  margin-top: 87px;
 }
 
-/* main fixed header --> primary header */
-#mfh-ph {
-  height: 59px;
-  background-color: #141414;
-  display: flex;
-  align-items: center;
-  padding: var(--main-layout-padding);
-}
 
-#mfh-ph-nav {
-  display: none;
-}
-
-#mfh-ph-nav a {
-  color: white;
-  font-weight: bold;
-  font-family: "Arial", sans-serif;
-  padding-right: 30px;
-}
-
-/* main fixed header --> secondary header */
-#mfh-sh {
-  height: 48px;
-  background-color: white;
-  display: flex;
-  padding: 0 10px;
-  border-bottom: 1px solid grey;
-  display: none;
-}
-
-/* WRAPPER */
-/* main fixed audio player */ /* mfap */
-#main-fixed-audio-player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 2;
-}
-
-/* main fixed audio player --> base */
-#mfap-base {
-  height: 65px;
-  background-color: inherit;
-  border-top: 1px solid grey;
-  display: flex;
-}
-
-#mfap-base-rcah {
-  width: 65px;
-}
-
-#mfap-base-right {
-  border-top: 4px solid grey;
-  width: 100%;
-}
-
-#mfap-base-right:hover {
-  border-top: 4px solid black;
-  cursor: pointer;
-}
-
-#mfap-base-right-inner {
-  padding: 10px
-}
-
-/* main fixed audio player --> extension */
-#mfap-extension {
-  display: none;
-  height: 300px;
-  background-color: inherit;
-  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.3);
-  overflow-y: scroll;
-
-}
-
-/* main fixed audio player --> extension --> row */
-.mfap-ext-row {
-  border-top: 1px solid grey;
-  overflow: hidden;
-  display: flex;
-}
-
-.mfap-ext-row-rcah {
-  width: 55px;
-  height: 55px;
-}
-
-.mfap-ext-row-rcah img {
- width: 100%;
- height: 100%;
-}
 
 
 /* WRAPPER */
@@ -154,25 +63,5 @@
   width: 300px;
   height: 100%;
   background-color: white;
-
-}
-
-/* page content */
-#page-content {
-  margin-top: 87px;
-  padding: var(--main-layout-padding);
-}
-
-/* --------------------------------------- */
-/* Media Queries */
-
-@media screen and (min-width: 965px) {
-  #mfh-ph-nav {
-    display: block;
-  }
-
-  #main-fixed-mobile-menu {
-    display: none;
-  }
 
 }

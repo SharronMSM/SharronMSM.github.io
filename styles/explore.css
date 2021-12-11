@@ -10,12 +10,12 @@
   flex-direction: row; /* default flex-direction */
   flex-wrap: wrap;
   margin-top: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: "Trebuchet MS", sans-serif;
 }
 
 .row-item {
-  margin-right: 16px;
+  margin-right: var(--row-item-margin-right);
   margin-bottom: 50px;
   width: calc((100% - 20px) / 2);
 }
@@ -49,139 +49,4 @@ a:hover {
 
 .row .row-item:nth-child(n+5) {
   display: none;
-}
-
-
-/* --------------------------------------- */
-/* Media Queries */
-
-@media screen and (min-width: 575px) {
-
-  #row-one .row-item:nth-child(3) {
-    display: block;
-  }
-
-  .row .row-item:nth-child(n+5):nth-child(-n+6) {
-    display: block;
-  }
-
-
-
-  .row-item:nth-of-type(n) {
-    margin-right: 20px;
-  }
-
-  .row-item {
-    width: calc((100% - 40px) / 3);
-  }
-
-  .row-item:nth-of-type(3n) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 775px) {
-
-  #row-one .row-item:nth-child(4) {
-    display: block;
-  }
-
-  .row .row-item:nth-child(n+7):nth-child(-n+8) {
-    display: block;
-  }
-
-  .row-item:nth-of-type(n) {
-    margin-right: 20px;
-  }
-
-  .row-item {
-    width: calc((100% - 60px) / 4);
-  }
-
-  .row-item:nth-of-type(4n) {
-    margin-right: 0;
-  }
-
-}
-
-@media screen and (min-width: 925px) {
-
-  #row-one .row-item:nth-child(5) {
-    display: block;
-  }
-
-  .row .row-item:nth-child(n+9):nth-child(-n+10) {
-    display: block;
-  }
-
-  .row-item:nth-of-type(n) {
-    margin-right: 20px;
-  }
-
-  .row-item {
-    width: calc((100% - 80px) / 5);
-  }
-
-  .row-item:nth-of-type(5n) {
-    margin-right: 0;
-  }
-
-  #page-content {
-    padding: 0 25px;
-  }
-
-  #mfh-ph {
-    padding: 0 25px;
-  }
-
-
-
-}
-
-@media screen and (min-width: 1065px) {
-
-  #row-one .row-item:nth-child(6) {
-    display: block;
-  }
-
-  .row .row-item:nth-child(n+11):nth-child(-n+12) {
-    display: block;
-  }
-
-  .row-item:nth-of-type(n) {
-    margin-right: 20px;
-  }
-
-  .row-item {
-    width: calc((100% - 100px) / 6);
-  }
-
-  .row-item:nth-of-type(6n) {
-    margin-right: 0;
-  }
-
-}
-
-@media screen and (min-width: 1265px) {
-
-  #row-one .row-item:nth-child(7) {
-    display: block;
-  }
-
-  .row .row-item:nth-child(n+13):nth-child(-n+14) {
-    display: block;
-  }
-
-  .row-item:nth-of-type(n) {
-    margin-right: 20px;
-  }
-
-  .row-item {
-    width: calc((100% - 120px) / 7);
-  }
-
-  .row-item:nth-of-type(7n) {
-    margin-right: 0;
-  }
-
 }
