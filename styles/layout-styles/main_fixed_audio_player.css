@@ -1,13 +1,4 @@
-/* WRAPPER */
-/* main fixed audio player */ /* mfap */
-#main-fixed-audio-player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 2;
-}
+
 
 /* main fixed audio player --> base */
 #mfap-base {

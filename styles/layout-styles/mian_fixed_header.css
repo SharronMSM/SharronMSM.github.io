@@ -1,24 +1,25 @@
 /* WRAPPER */
-/* main fixed header */ 
+/* main fixed header */
 #main-fixed-header {
-  position: fixed; /* The element is positioned relative to the browser window. */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Because this selector has a positon: fixed; it will shrink-wrap to fit its content, so the width: 100%; must be specified so it can behave like a block level element and span 100% width. */
+  width: 100%;
   z-index: 1;
 }
 
-/* main fixed header --> primary header */
+/* main fixed header - primary header */
 #mfh-ph {
   height: 55px;
   background-color: #141414;
-  display: flex; /* This element becomes a flex container. */
-  flex-direction: row; /* Default value. The flex items are displayed horizontally, as a row */
-  flex-wrap: nowrap; /* Default value */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   padding: var(--main-layout-padding);
 }
 
+/* main fixed header - primary header - navigation */
 #mfh-ph-nav {
   display: none;
 }
@@ -30,7 +31,7 @@
   padding-right: 30px;
 }
 
-/* main fixed header --> secondary header */
+/* main fixed header - secondary header */
 #mfh-sh {
   height: 48px;
   background-color: white;

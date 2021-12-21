@@ -1,15 +1,118 @@
-/* basic.css */
-
 /* CSS Variables */
 :root {
-  /* main layout padding */ /* mfh-ph */ /* page content */
-  /* why not margin-right? why padding-right? */
-  --main-layout-padding: 0 18px;
-  /* row item padding right */ /* row-item */
+  --main-layout-padding: 0 20px;
   --row-item-margin-right: 20px;
-  /* main layout primary color */
   --main-layout-primary-color: ;
 }
+
+/* WRAPPER */
+/* main fixed header */
+#main-fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1;
+}
+
+/* main fixed header --> primary header */
+#mfh-ph {
+  height: 59px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: var(--main-layout-padding);
+
+  /* box-shadow: 0px 1px 5px 3px grey; */
+
+
+}
+
+/* Start by setting the offset-x and offset-y. It specifies which side of the element ( top, left, bottom, right) the box-shadow should be applied on and how far from that element should the shadow be placed. */
+/* offset-x (required) --> positive/right and negative/left */
+/* offset-y (required) --> positive/bottom and negative/top */
+/* blur-radius --> Controls how much shadow to blur */
+/* spread-radius --> Controls how much to grow or shrink a shadow. */
+
+
+/* main fixed header --> primary header --> navigation */
+#mfh-ph-nav {
+  display: none;
+}
+
+/* WRAPPER */
+/* main fixed audio player */
+#main-fixed-audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+
+  z-index: 2;
+}
+
+/* page content */
+#page-content {
+  margin: var(--main-layout-padding);
+  margin-top: 87px;
+}
+
+/* main fixed audio player --> base */
+#mfap-base {
+  height: 65px;
+  border-top: 1px solid grey;
+  display: flex;
+}
+
+#mfap-base-rcah {
+  width: 65px;
+}
+
+#mfap-base-right {
+  border-top: 4px solid grey;
+  width: 100%;
+}
+
+#mfap-base-right:hover {
+  border-top: 4px solid black;
+  cursor: pointer;
+}
+
+#mfap-base-right-inner {
+  padding: 10px
+}
+
+/* main fixed audio player --> extension */
+#mfap-extension {
+  display: none;
+  height: 300px;
+  background-color: inherit;
+  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.3);
+  overflow-y: scroll;
+
+}
+
+/* main fixed audio player --> extension --> row */
+.mfap-ext-row {
+  border-top: 1px solid grey;
+  overflow: hidden;
+  display: flex;
+}
+
+.mfap-ext-row-rcah {
+  width: 55px;
+  height: 55px;
+}
+
+.mfap-ext-row-rcah img {
+ width: 100%;
+ height: 100%;
+}
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -37,17 +140,8 @@
 
 }
 
-/* page content */
-#page-content {
-  margin: var(--main-layout-padding);
-  margin-top: 87px;
-}
-
-
-
-
 /* WRAPPER */
-/* main fixed mobile menu */ /* mfmm */
+/* main fixed mobile menu */
 #main-fixed-mobile-menu {
   display: none;
   position: fixed;
@@ -55,8 +149,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.8);
   z-index: 3;
+}
+
+#mfmm-modal {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  padding: 10px;
 }
 
 #mfmm-box {

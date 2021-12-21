@@ -10,13 +10,13 @@ function HIDEmainFixedAudioPlayer() {
 }
 
 
-// SHOW main fixed mobile menu _ sidebar
+// SHOW main fixed mobile menu --> modal
 function SHOWmainFixedMobileMenu() {
-  document.getElementById('mfmm-box').style.display = "block";
+  document.getElementById('main-fixed-mobile-menu').style.display = "block";
 }
 
-// HIDE main fixed mobile menu _ sidebar
+// HIDE main fixed mobile menu --> modal
 function HIDEmainFixedMobileMenu() {
-  document.getElementById('main-fixed-audio-player').style.display = none;
+  document.getElementById('main-fixed-mobile-menu').style.display = "none";
 
 }

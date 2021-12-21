@@ -2,16 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta charset="UTF-8" /> <!-- 1 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> <!-- 2 -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home | MajorScale Music</title>
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles/initial.css" />
   <link rel="stylesheet" href="styles/basic.css" />
   <link rel="stylesheet" href="styles/explore.css" />
+  <link rel="stylesheet" href="styles/@media_queries.css" />
+
   <meta name="author" content="Sharron Kathiresu" />
   <meta name="description" content="Music Website" />
+
   <script src="scripts/main-scripts.js"></script>
+
+  <!-- Facebook Open Graph -->
   <meta property"og:title" content="" />
   <meta property"og:url" content="" />
   <meta property"og:image" content="" />
@@ -23,199 +30,87 @@
 
 <body dir="ltr">
 
+  <!-- main fixed header -->
   <header id="main-fixed-header">
-
     <div id="mfh-ph" onclick="SHOWmainFixedMobileMenu()">
 
-      <div id="mfh-ph-left">
-        <svg></svg>
-      </div>
-
-      <div id="mfh-ph-right">
-        <svg></svg>
-        <svg></svg>
-      </div>
-
-      <!-- main fixed header - primary header - navigation -->
-      <nav id="mfh-ph-nav">
-        <a href="index.html">Explore</a>
-        <a href="charts.html">Charts</a>
-        <a href="events.html">Events</a>
-        <a href="broadcast.html">Broadcast</a>
-      </nav>
-      <!-- end of: main fixed header primary header navigation -->
-
     </div>
-
-    <div id="mfh-sh">
-
-    </div>
-
   </header>
-  <!-- end of: main fixed header -->
+  <!-- main fixed header -->
 
-<!-- ************************************************ -->
-
-  <!-- main fixed audio player --> <!-- mfap -->
-  <div id="main-fixed-audio-player" onclick="SHOWmainFixedAudioPlayer()" ondblclick="HIDEmainFixedAudioPlayer()">
-
-    <div id="mfap-extension">
-
-      <div  style="height: 25px;"></div>
-
-      <div class="mfap-ext-row">
-
-        <div class="mfap-ext-row-rcah">
-          <img src="images/coverart-1.jpg" alt="" />
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; font-weight: bold;">
-          <p>Track title</p>
-          <p>Eminem ft. Lil Wayne, Drake & Nicki Minaj</p>
-          <p>some text</p>
-          <p>length</p>
-          <p>whatever</p>
-        </div>
-
-      </div>
-      <!-- end of: main fixed audio player _ extension _ row -->
-
-      <!-- main fixed audio player _ extension _ row -->
-      <div class="mfap-ext-row">
-
-        <div class="mfap-ext-row-rcah">
-          <img src="images/coverart-1.jpg" alt="" />
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; font-weight: bold;">
-          <p>Track title</p>
-          <p>Eminem ft. Lil Wayne, Drake & Nicki Minaj</p>
-          <p>some text</p>
-          <p>length</p>
-          <p>whatever</p>
-        </div>
-
-      </div>
-      <!-- end of: main fixed audio player _ extension _ row -->
-
-      <!-- main fixed audio player _ extension _ row -->
-      <div class="mfap-ext-row">
-
-        <div class="mfap-ext-row-rcah">
-          <img src="images/coverart-1.jpg" alt="" />
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; font-weight: bold;">
-          <p>Track title</p>
-          <p>Eminem ft. Lil Wayne, Drake & Nicki Minaj</p>
-          <p>some text</p>
-          <p>length</p>
-          <p>whatever</p>
-        </div>
-
-      </div>
-      <!-- end of: main fixed audio player _ extension _ row -->
-
-      <!-- main fixed audio player _ extension _ row -->
-      <div class="mfap-ext-row">
-
-        <div class="mfap-ext-row-rcah">
-          <img src="images/coverart-1.jpg" alt="" />
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; font-weight: bold;">
-          <p>Track title</p>
-          <p>Eminem ft. Lil Wayne, Drake & Nicki Minaj</p>
-          <p>some text</p>
-          <p>length</p>
-          <p>whatever</p>
-        </div>
-
-      </div>
-      <!-- end of: main fixed audio player _ extension _ row -->
-
-      <!-- main fixed audio player _ extension _ row -->
-      <div class="mfap-ext-row">
-
-        <div class="mfap-ext-row-rcah">
-          <img src="images/coverart-1.jpg" alt="" />
-        </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; font-weight: bold;">
-          <p>Track title</p>
-          <p>Eminem ft. Lil Wayne, Drake & Nicki Minaj</p>
-          <p>some text</p>
-          <p>length</p>
-          <p>whatever</p>
-        </div>
-
-
-      </div>
-      <!-- end of: main fixed audio player _ extension _ row -->
-
-      <!-- main fixed audio player _ extension _ row -->
-      <div class="mfap-ext-row">
-
-      </div>
-      <!-- end of: main fixed audio player _ extension _ row -->
-
-      <!-- main fixed audio player _ extension _ row -->
-      <div class="mfap-ext-row">
-
-      </div>
-      <!-- end of: main fixed audio player _ extension _ row -->
-
-      <!-- main fixed audio player _ extension _ row -->
-      <div class="mfap-ext-row">
-
-      </div>
-      <!-- end of: main fixed audio player _ extension _ row -->
-
-
-    </div>
-    <!--- end of: main fixed audio player _ extension -->
-
+  <!-- main fixed audio player -->
+  <div id="main-fixed-audio-player">
     <div id="mfap-base">
 
-      <div id="mfap-base-left">
+    </div>
+  </div>
+  <!-- main fixed audio player -->
 
-        <!-- main fixed audio player _ base _ release cover art holder -->
-        <div id="mfap-base-rcah">
-          <img src="images/coverart-2.jpg" alt="" />
-        </div>
+  <!-- main fixed mobile menu -->
+  <div id="main-fixed-mobile-menu" ondblclick="HIDEmainFixedMobileMenu()">
+    <div id="mfmm-modal">
 
-      </div>
-
-      <div id="mfap-base-right">
-
-        <div id="mfap-base-right-inner">
-          <p>Track title</p>
-          <p>Eminem ft. Lil Wayne, Drake & Nicki Minaj</p>
-        </div>
-
-      </div>
-
-
-
-
+      <a href="index.html">Explore</a>
+      <a href="charts.html">Charts</a>
+      <a href="events.html">Events</a>
 
     </div>
   </div>
-  <!-- end of: main fixed audio player -->
+  <!-- main fixed mobile menu -->
 
-<!-- ************************************************ -->
-
-  <!-- main fixed mobile menu --> <!-- mfmm -->
-  <div id="main-fixed-mobile-menu">
-    <div id="mfmm-box">
-
-    </div>
-  </div>
-  <!-- end of main fixed mobile menu -->
-
-<!-- ************************************************ -->
 
   <!-- page content -->
   <div id="page-content">
+
     <!-- main content -->
     <main id="main-content">
 
-      <h1 title="Featured">Featured</h1>
+      <!-- section 1 -->
+      <div>
+
+        <h1>Featured</h1>
+        <!-- row 1 -->
+        <div id="row-one" class="row">
+
+          <!-- item 1 in row 1 -->
+          <div class="row-item">
+            <a href="primary-music-content.html" download="download" >
+            <!-- row item _ release cover art holder -->
+            <div class="ri-rcah">
+              <img src="images/coverart-1.jpg"  alt="" />
+
+
+            </div>
+            <!-- end of: row item release cover art holder -->
+
+            <!-- row _ item release metadata info -->
+            <div class="ri-rmi">
+              <p>Title</p>
+              <p>Artists</p>
+            </div>
+            <!-- end of: row item release metadata info -->
+            </a>
+          </div>
+          <!-- end of item 1 in row 1 -->
+
+          <!-- item 2 in row 1 -->
+          <div class="row-item">
+            <!-- row item _ release cover art holder -->
+            <div class="ri-rcah">
+              <img src="images/coverart-3.jpg"   alt="" />
+
+            </div>
+            <!-- row item  _ release metadata info -->
+            <div class="ri-rmi">
+              <p>Title of song</p>
+              <p>Artists</p>
+            </div>
+            <!-- end of: row item release metadata info -->
+          </div>
+          <!-- end of item 2 in row 1 -->
+
+      </div>
+      <!-- section 1 -->
 
       <!-- row 1 -->
       <div id="row-one" class="row">
@@ -225,7 +120,7 @@
           <a href="primary-music-content.html" download="download" >
           <!-- row item _ release cover art holder -->
           <div class="ri-rcah">
-            <img src="images/coverart-2.jpg"  alt="" />
+            <img src="images/coverart-5.jpg"  alt="" />
 
 
           </div>
@@ -245,7 +140,7 @@
         <div class="row-item">
           <!-- row item _ release cover art holder -->
           <div class="ri-rcah">
-            <img src="images/coverart-3.jpg"   alt="" />
+            <img src="images/coverart-6.jpg"   alt="" />
 
           </div>
           <!-- row item  _ release metadata info -->
