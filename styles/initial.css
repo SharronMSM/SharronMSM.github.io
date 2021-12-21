@@ -37,11 +37,11 @@ html {
   box-sizing: border-box;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  word-break: break-word; 
+  word-break: break-word;
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   display: block;
 }
 

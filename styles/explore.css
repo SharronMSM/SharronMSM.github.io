@@ -1,8 +1,31 @@
-/* explore.css */
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-/* CSS Variables */
+.section-item {
+  width: 50%;
+}
 
+.si-cover-art-holder {
+  height: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: lightgrey;
 
+}
+
+/* ^I need to make this a 1:1 grey square with same height as width */
+
+ img {
+   position: absolute;
+   width: 100%;
+   display:
+  /* height: auto; ??? */
+}
+/* ^ If a width is not given to the img, it will be rendered as its intrisic size. */
 
 /* */
 .row {
