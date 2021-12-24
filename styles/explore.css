@@ -1,12 +1,12 @@
 /* Section 1, Section 2, Section 3, Section 4 */
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 #section-two .section-item,
 #section-three .section-item
  {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
 }
 
@@ -20,11 +20,12 @@
 
 /* ^ flex-items */
 .section-item {
-  width: calc((100% - 16px) / 2  );
+  width: calc((100% - 12px) / 2  );
 }
 
 .release-info {
   margin-top: 5px;
+
 }
 
 .section-item p {
@@ -51,6 +52,7 @@ h1 {
   font-size: 20px;
   margin-bottom: 10px;
   font-weight: 100;
+
 }
 
 .si-cover-art-holder {

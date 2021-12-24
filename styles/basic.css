@@ -1,6 +1,6 @@
 /* CSS Variables */
 :root {
-  --main-layout-padding: 0 12px;
+  --main-layout-padding: 0 15px;
   --row-item-margin-right: 20px;
   --main-layout-primary-color: ;
 }
@@ -59,7 +59,7 @@
 /* page content */
 #page-content {
   margin: var(--main-layout-padding);
-  margin-top: 78px;
+  margin-top: 75px;
 }
 
 /* main fixed audio player --> base */

@@ -1,6 +1,6 @@
 /* Media Queries */
 
-@media screen and (min-width: 405px) {
+@media screen and (min-width: 455px) {
 
   .section-item {
     width: calc((100% - 34px) / 3  );
