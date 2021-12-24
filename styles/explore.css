@@ -1,11 +1,56 @@
+/* Section 1, Section 2, Section 3, Section 4 */
 .section {
+  margin-bottom: 40px;
+}
+
+#section-two .section-item,
+#section-three .section-item
+ {
+  margin-bottom: 30px;
+
+}
+
+/* flex-container */
+.section-item-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+/* ^ flex-items */
 .section-item {
-  width: 50%;
+  width: calc((100% - 16px) / 2  );
+}
+
+.release-info {
+  margin-top: 5px;
+}
+
+.section-item p {
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+/* Hide Section 1 items --> 3 and over  */
+#sic-one :nth-child(n+3) {
+  display: none;
+}
+
+/* Hide Section 2, Section 3 items --> 7 and over  */
+#sic-two :nth-child(n+5),
+#sic-three :nth-child(n+5) {
+  display: none;
+}
+#sic-four :nth-child(n+5) {
+  display: none;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 100;
 }
 
 .si-cover-art-holder {
@@ -17,12 +62,10 @@
 
 }
 
-/* ^I need to make this a 1:1 grey square with same height as width */
 
  img {
    position: absolute;
    width: 100%;
-   display:
   /* height: auto; ??? */
 }
 /* ^ If a width is not given to the img, it will be rendered as its intrisic size. */
