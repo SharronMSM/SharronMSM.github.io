@@ -1,0 +1,17 @@
+/* frequently asked questions definition list */
+#faq-dl {
+	text-align: center;
+}
+
+#faq-dl dt {
+	font-weight: bold;
+	font-size: 26px;
+}
+
+#faq-dl dd {
+	font-size: 22px;
+}
+
+dd {
+	margin: 0;
+}
